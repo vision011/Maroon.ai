@@ -9,10 +9,10 @@ export function WidgetCard({
   footer,
 }: {
   title: string;
-  subtitle?: string;
+  subtitle?: string | undefined;
   badge?: ReactNode;
   children: ReactNode;
-  footer?: ReactNode;
+  footer?: ReactNode | undefined;
 }) {
   return (
     <section className="card-surface animate-in fade-in slide-in-from-bottom-2 overflow-hidden duration-300">

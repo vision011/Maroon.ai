@@ -1,7 +1,13 @@
 import { initials } from "@/utils/helpers";
 import { useAuth } from "@/hooks/useAuth";
 
-export function Header({ title, subtitle }: { title: string; subtitle?: string }) {
+export function Header({
+  title,
+  subtitle,
+}: {
+  title: string;
+  subtitle?: string | undefined;
+}) {
   const { student } = useAuth();
 
   return (
