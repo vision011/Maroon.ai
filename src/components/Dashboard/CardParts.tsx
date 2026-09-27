@@ -4,17 +4,22 @@ import {
   CalendarDays,
   ClipboardCheck,
   CreditCard,
+  User,
+  Users,
   Wrench,
 } from "lucide-react";
 import type { WidgetIcon, WidgetTone } from "@/types/sdui";
 
-const ICONS = {
+export const ICONS = {
   payment: CreditCard,
   assignment: BookOpen,
   exam: ClipboardCheck,
   event: CalendarDays,
   workshop: Wrench,
   career: Briefcase,
+  courses: BookOpen,
+  clubs: Users,
+  account: User,
 } as const;
 
 const ICON_TONE: Record<WidgetTone, string> = {

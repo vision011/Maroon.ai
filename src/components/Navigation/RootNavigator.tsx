@@ -1,6 +1,5 @@
 import { useEffect, type ReactNode } from "react";
 import { useNavigate, useRouterState } from "@tanstack/react-router";
-import { BottomTabNavigator } from "./BottomTabNavigator";
 import { Loading } from "@/components/Common/Loading";
 import { useAuth } from "@/hooks/useAuth";
 
@@ -38,9 +37,8 @@ export function RootNavigator({ children }: { children: ReactNode }) {
   }
 
   return (
-    <div className="min-h-screen pb-24">
+    <div className="min-h-screen">
       <main className="mx-auto max-w-lg">{children}</main>
-      <BottomTabNavigator />
     </div>
   );
 }
