@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Header } from "@/components/Common/Header";
 import { Loading } from "@/components/Common/Loading";
 import { EmptyState } from "@/components/Dashboard/EmptyState";
 import { clubsService } from "@/services/clubsService";
@@ -21,8 +20,7 @@ export function ClubsScreen() {
 
   return (
     <>
-      <Header title="Clubs" subtitle="Events from groups you follow" />
-      <div className="space-y-4 px-5 py-5">
+      <div className="space-y-4 px-5 pb-5 pt-[max(1.25rem,env(safe-area-inset-top))]">
         {!events ? (
           <Loading label="Loading events" />
         ) : events.length === 0 ? (

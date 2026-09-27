@@ -74,6 +74,7 @@
   --border: oklch(0.905 0.012 40);
   --input: oklch(0.905 0.012 40);
   --ring: oklch(0.385 0.082 10);
+  --background-gradient: linear-gradient(180deg, oklch(0.955 0.022 12) 0%, oklch(0.975 0.012 20) 45%, oklch(0.99 0.004 60) 100%);
 }
 
 .dark {
@@ -96,6 +97,7 @@
   --border: oklch(1 0 0 / 12%);
   --input: oklch(1 0 0 / 16%);
   --ring: oklch(0.62 0.12 12);
+  --background-gradient: linear-gradient(180deg, oklch(0.24 0.04 12) 0%, oklch(0.18 0.02 15) 100%);
 }
 
 @layer base {
@@ -105,6 +107,8 @@
 
   body {
     background-color: var(--color-background);
+    background-image: var(--background-gradient);
+    background-attachment: fixed;
     color: var(--color-foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
