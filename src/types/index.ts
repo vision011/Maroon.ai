@@ -79,9 +79,10 @@ export interface Course {
   code: string;
   title: string;
   instructor: string;
-  credits: number;
-  meetingTime: string;
-  location: string;
+  /** Not provided by Canvas, so optional. */
+  credits?: number;
+  meetingTime?: string;
+  location?: string;
   grade?: string;
 }
 

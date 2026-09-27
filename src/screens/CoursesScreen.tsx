@@ -41,22 +41,21 @@ export function CoursesScreen() {
                 ) : null}
               </div>
               <dl className="mt-4 grid grid-cols-2 gap-3 text-sm">
-                <div>
-                  <dt className="text-xs text-muted-foreground">Instructor</dt>
-                  <dd>{course.instructor}</dd>
-                </div>
-                <div>
-                  <dt className="text-xs text-muted-foreground">Credits</dt>
-                  <dd>{course.credits}</dd>
-                </div>
-                <div>
-                  <dt className="text-xs text-muted-foreground">Meets</dt>
-                  <dd>{course.meetingTime}</dd>
-                </div>
-                <div>
-                  <dt className="text-xs text-muted-foreground">Where</dt>
-                  <dd>{course.location}</dd>
-                </div>
+                {(
+                  [
+                    ["Instructor", course.instructor],
+                    ["Credits", course.credits],
+                    ["Meets", course.meetingTime],
+                    ["Where", course.location],
+                  ] as const
+                )
+                  .filter(([, value]) => value != null && value !== "")
+                  .map(([label, value]) => (
+                    <div key={label}>
+                      <dt className="text-xs text-muted-foreground">{label}</dt>
+                      <dd>{value}</dd>
+                    </div>
+                  ))}
               </dl>
             </article>
           ))

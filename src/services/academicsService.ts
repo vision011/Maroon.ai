@@ -1,4 +1,5 @@
 import { mockRequest } from "./api";
+import { getCanvasAssignments, getCanvasCourses } from "./canvas.functions";
 import type { AcademicItem, Course } from "@/types";
 
 const ASSIGNMENTS: AcademicItem[] = [
@@ -65,7 +66,10 @@ function daysFromNow(days: number): string {
   return new Date(Date.now() + days * 86_400_000).toISOString();
 }
 
+/** Live Canvas data when CANVAS_API_TOKEN is set on the server; mock data otherwise. */
 export const academicsService = {
-  getAssignments: (): Promise<AcademicItem[]> => mockRequest("/academics/assignments", ASSIGNMENTS),
-  getCourses: (): Promise<Course[]> => mockRequest("/academics/courses", COURSES),
+  getAssignments: async (): Promise<AcademicItem[]> =>
+    (await getCanvasAssignments()) ?? mockRequest("/academics/assignments", ASSIGNMENTS),
+  getCourses: async (): Promise<Course[]> =>
+    (await getCanvasCourses()) ?? mockRequest("/academics/courses", COURSES),
 };
