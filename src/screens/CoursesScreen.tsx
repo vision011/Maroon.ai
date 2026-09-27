@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Header } from "@/components/Common/Header";
 import { Loading } from "@/components/Common/Loading";
 import { EmptyState } from "@/components/Dashboard/EmptyState";
 import { academicsService } from "@/services/academicsService";
@@ -18,12 +17,9 @@ export function CoursesScreen() {
     };
   }, []);
 
-  const credits = courses?.reduce((total, c) => total + c.credits, 0) ?? 0;
-
   return (
     <>
-      <Header title="Courses" subtitle={courses ? `Fall 2026 · ${credits} credits` : "Fall 2026"} />
-      <div className="space-y-4 px-5 py-5">
+      <div className="space-y-4 px-5 pb-5 pt-[max(1.25rem,env(safe-area-inset-top))]">
         {!courses ? (
           <Loading label="Loading your schedule" />
         ) : courses.length === 0 ? (

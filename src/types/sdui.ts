@@ -1,35 +1,58 @@
-import type { AcademicItem, ClubEvent, PaymentItem } from "./index";
+export type WidgetType = "action" | "suggestion";
 
-export type WidgetType = "academics" | "payments" | "clubs";
+/** Dashboard sections the server can place widgets into. */
+export type SectionId = "actions" | "forYou";
+
+export type WidgetIcon = "payment" | "assignment" | "exam" | "event" | "workshop" | "career";
+
+/** Drives the icon and eyebrow color: urgent = maroon, info = neutral, reward = gold. */
+export type WidgetTone = "urgent" | "info" | "reward";
 
 export interface WidgetBase {
   id: string;
+  section: SectionId;
   priority: number;
   hidden?: boolean;
+}
+
+export interface CardContent {
+  eyebrow: string;
   title: string;
-  subtitle?: string;
+  detail: string;
+  icon: WidgetIcon;
+  tone: WidgetTone;
+  to?: string;
 }
 
-export interface AcademicsWidgetModel extends WidgetBase {
-  type: "academics";
-  data: { items: AcademicItem[] };
+export interface ActionWidgetModel extends WidgetBase {
+  type: "action";
+  /** Featured cards span the full width; compact cards sit in a two-column grid. */
+  size: "featured" | "compact";
+  data: CardContent;
 }
 
-export interface PaymentsWidgetModel extends WidgetBase {
-  type: "payments";
-  data: { balanceDue: number; items: PaymentItem[] };
+export interface SuggestionWidgetModel extends WidgetBase {
+  type: "suggestion";
+  data: CardContent & { meta?: string };
 }
 
-export interface ClubsWidgetModel extends WidgetBase {
-  type: "clubs";
-  data: { events: ClubEvent[] };
-}
+export type Widget = ActionWidgetModel | SuggestionWidgetModel;
 
-export type Widget = AcademicsWidgetModel | PaymentsWidgetModel | ClubsWidgetModel;
+export interface SectionModel {
+  id: SectionId;
+  title: string;
+  priority: number;
+}
 
 export interface DashboardResponse {
+  greeting: { title: string; subtitle: string };
+  sections: SectionModel[];
   widgets: Widget[];
   metadata: { generatedAt: string; layoutVersion: string; studentId: string };
+}
+
+export interface ResolvedSection extends SectionModel {
+  widgets: Widget[];
 }
 
 /** Sort by priority and drop widgets the server hid or that carry no data. */
@@ -39,14 +62,20 @@ export function resolveWidgets(widgets: Widget[]): Widget[] {
     .sort((a, b) => a.priority - b.priority);
 }
 
+/** Group resolved widgets under their sections, in section order, skipping empty sections. */
+export function resolveSections(sections: SectionModel[], widgets: Widget[]): ResolvedSection[] {
+  const visible = resolveWidgets(widgets);
+  return [...sections]
+    .sort((a, b) => a.priority - b.priority)
+    .map((section) => ({ ...section, widgets: visible.filter((w) => w.section === section.id) }))
+    .filter((section) => section.widgets.length > 0);
+}
+
 export function widgetHasData(widget: Widget): boolean {
   switch (widget.type) {
-    case "academics":
-      return widget.data.items.length > 0;
-    case "payments":
-      return widget.data.items.length > 0 || widget.data.balanceDue > 0;
-    case "clubs":
-      return widget.data.events.length > 0;
+    case "action":
+    case "suggestion":
+      return widget.data.title.trim().length > 0;
     default:
       return false;
   }

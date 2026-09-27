@@ -8,12 +8,13 @@ import {
   type ReactNode,
 } from "react";
 import { dashboardService } from "@/services/dashboardService";
-import { resolveWidgets, type DashboardResponse, type Widget } from "@/types/sdui";
+import { resolveSections, type DashboardResponse, type ResolvedSection } from "@/types/sdui";
 import { REFRESH_CACHE_MS } from "@/utils/constants";
 import { useAuth } from "@/hooks/useAuth";
 
 export interface DashboardContextValue {
-  widgets: Widget[];
+  sections: ResolvedSection[];
+  greeting: DashboardResponse["greeting"] | null;
   metadata: DashboardResponse["metadata"] | null;
   loading: boolean;
   refreshing: boolean;
@@ -40,10 +41,14 @@ export function DashboardProvider({ children }: { children: ReactNode }) {
       if (!force && fresh) return;
 
       const initial = response === null;
-      initial ? setLoading(true) : setRefreshing(true);
+      if (initial) setLoading(true);
+      else setRefreshing(true);
       setError(null);
       try {
-        const data = await dashboardService.getWidgets(student.studentId);
+        const data = await dashboardService.getWidgets(
+          student.studentId,
+          student.name.split(" ")[0] ?? student.name,
+        );
         setResponse(data);
         lastFetchedAt.current = Date.now();
       } catch (err) {
@@ -67,7 +72,8 @@ export function DashboardProvider({ children }: { children: ReactNode }) {
 
   const value = useMemo<DashboardContextValue>(
     () => ({
-      widgets: response ? resolveWidgets(response.widgets) : [],
+      sections: response ? resolveSections(response.sections, response.widgets) : [],
+      greeting: response?.greeting ?? null,
       metadata: response?.metadata ?? null,
       loading,
       refreshing,

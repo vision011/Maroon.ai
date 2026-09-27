@@ -1,4 +1,3 @@
-import { Header } from "@/components/Common/Header";
 import { useAuth } from "@/hooks/useAuth";
 
 export function AccountScreen() {
@@ -6,8 +5,7 @@ export function AccountScreen() {
 
   return (
     <>
-      <Header title="Account" subtitle={student?.program} />
-      <div className="space-y-4 px-5 py-5">
+      <div className="space-y-4 px-5 pb-5 pt-[max(1.25rem,env(safe-area-inset-top))]">
         <section className="card-surface p-5">
           <dl className="space-y-3 text-sm">
             <div className="flex justify-between gap-3">

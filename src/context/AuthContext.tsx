@@ -15,7 +15,7 @@ export interface AuthContextValue {
   token: string | null;
   isAuthenticated: boolean;
   isReady: boolean;
-  login: (internetId: string) => Promise<void>;
+  login: (internetId: string, password: string) => Promise<void>;
   logout: () => void;
 }
 
@@ -36,8 +36,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setIsReady(true);
   }, []);
 
-  const login = useCallback(async (internetId: string) => {
-    // TODO: replace with real UMN SSO exchange.
+  const login = useCallback(async (internetId: string, password: string) => {
+    // TODO: replace with real UMN SSO exchange. The mock accepts any non-empty password
+    // and never stores it.
+    if (!internetId || !password) throw new Error("Enter your Internet ID and password.");
     const next: AuthSession = {
       student: { ...MOCK_STUDENT, email: `${internetId || "mohamoud"}@umn.edu` },
       token: `mock-token-${Date.now()}`,
