@@ -2,6 +2,7 @@ import { WidgetSkeleton } from "@/components/Common/Loading";
 import { ChatBar } from "@/components/Chat/ChatBar";
 import { ActionCard } from "./ActionCard";
 import { SuggestionCard } from "./SuggestionCard";
+import { ShortcutButton } from "./ShortcutButton";
 import { EmptyState } from "./EmptyState";
 import { WidgetError } from "./WidgetCard";
 import { useDashboard } from "@/hooks/useDashboard";
@@ -12,6 +13,8 @@ import type { ResolvedSection, Widget } from "@/types/sdui";
 
 function renderWidget(widget: Widget) {
   switch (widget.type) {
+    case "shortcut":
+      return <ShortcutButton key={widget.id} widget={widget} />;
     case "action":
       return <ActionCard key={widget.id} widget={widget} />;
     case "suggestion":
@@ -26,7 +29,9 @@ function Section({ section }: { section: ResolvedSection }) {
   return (
     <section>
       <h2 className="eyebrow px-5">{section.title}</h2>
-      {section.id === "forYou" ? (
+      {section.id === "quickActions" ? (
+        <div className="mt-4 flex justify-around px-3">{section.widgets.map(renderWidget)}</div>
+      ) : section.id === "forYou" ? (
         <div className="mt-3 flex snap-x snap-mandatory gap-3 overflow-x-auto scroll-px-5 px-5 pb-2 [scrollbar-width:none]">
           {section.widgets.map(renderWidget)}
         </div>
@@ -46,7 +51,7 @@ export function DashboardScreen() {
   const { pulling, pullDistance, refreshing } = usePullToRefresh();
 
   return (
-    <div className="pb-24 pt-[max(1.25rem,env(safe-area-inset-top))]">
+    <div className="pb-[calc(6rem+env(safe-area-inset-bottom))] pt-[max(1.25rem,env(safe-area-inset-top))]">
       <div
         className="flex items-center justify-center overflow-hidden text-xs text-muted-foreground transition-all"
         style={{ height: pulling || refreshing ? 28 : Math.min(pullDistance, 28) }}

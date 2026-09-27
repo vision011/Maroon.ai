@@ -25,7 +25,29 @@ export const dashboardService = {
       clubsService.getEvents(),
     ]);
 
-    const widgets: Widget[] = [];
+    const widgets: Widget[] = [
+      {
+        id: "w-shortcut-courses",
+        type: "shortcut",
+        section: "quickActions",
+        priority: 1,
+        data: { label: "Courses", icon: "courses", to: "/courses" },
+      },
+      {
+        id: "w-shortcut-clubs",
+        type: "shortcut",
+        section: "quickActions",
+        priority: 2,
+        data: { label: "Clubs", icon: "clubs", to: "/clubs" },
+      },
+      {
+        id: "w-shortcut-account",
+        type: "shortcut",
+        section: "quickActions",
+        priority: 3,
+        data: { label: "Account", icon: "account", to: "/account" },
+      },
+    ];
 
     if (balance.balanceDue > 0) {
       const nextDue = balance.items
@@ -94,13 +116,14 @@ export const dashboardService = {
         subtitle: "Here's what needs your attention at the U today.",
       },
       sections: [
-        { id: "actions", title: "Action items", priority: 1 },
-        { id: "forYou", title: "For you", priority: 2 },
+        { id: "quickActions", title: "Quick actions", priority: 1 },
+        { id: "actions", title: "Action items", priority: 2 },
+        { id: "forYou", title: "For you", priority: 3 },
       ],
       widgets,
       metadata: {
         generatedAt: new Date().toISOString(),
-        layoutVersion: "2026.09.2",
+        layoutVersion: "2026.09.3",
         studentId,
       },
     };

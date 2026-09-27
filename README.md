@@ -1,6 +1,6 @@
 # Gopher Companion
 
-A mobile-first University of Minnesota student companion. After signing in with a UMN Internet ID, students get one feed with their balance due, upcoming assignments and exams, and club events, plus tabs for courses, clubs and their account.
+A mobile-first University of Minnesota student companion. After signing in with a UMN Internet ID, students get one feed with their balance due, upcoming assignments and exams, and club events, plus quick actions that open their courses, clubs and account.
 
 The UI is **server-driven**: the dashboard renders whatever typed widgets the data layer returns, in the order it chooses. All data is mocked for now, and the service layer is built so real UMN endpoints can replace the mocks without UI changes.
 
@@ -64,7 +64,7 @@ src/
 ├── components/
 │   ├── Dashboard/   # DashboardScreen, ActionCard, SuggestionCard
 │   ├── Chat/        # ChatBar (assistant prompt + chat sheet)
-│   ├── Navigation/  # RootNavigator (auth gate + app frame), BottomTabNavigator
+│   ├── Navigation/  # RootNavigator (auth gate + app frame)
 │   ├── Common/      # Loading / skeletons
 │   └── ui/          # shadcn/ui primitives
 ├── context/         # AuthContext, DashboardContext (state + providers)
@@ -83,18 +83,18 @@ src/
 QueryClientProvider
 └── AuthProvider
     └── DashboardProvider
-        └── RootNavigator      (auth gating, phone-width frame, bottom tab bar)
+        └── RootNavigator      (auth gating, phone-width frame)
             └── <Outlet />     (active route)
 ```
 
-`RootNavigator` is mounted once in `__root.tsx`, so every route gets the same auth gate and tab bar.
+`RootNavigator` is mounted once in `__root.tsx`, so every route gets the same auth gate. There is no tab bar: the dashboard is the hub, and other screens link back to it with `BackLink`.
 
 ### Server-driven dashboard
 
-The dashboard has a greeting, an **Action items** section (one featured card over a two-column grid), a swipeable **For you** row, and a **Goldy** assistant chat bar pinned above the tab bar.
+The dashboard has a greeting, a **Quick actions** row of round shortcut buttons, an **Action items** section (one featured card over a two-column grid), a swipeable **For you** row, and a **Goldy** assistant chat bar pinned to the bottom of the screen.
 
 1. `dashboardService.getWidgets(studentId, firstName)` returns a `DashboardResponse`: the `greeting`, the ordered `sections`, a flat list of `widgets` and metadata (`generatedAt`, `layoutVersion`, `studentId`).
-2. Each `Widget` is a discriminated union on `type` (`"action" | "suggestion"`) with `id`, `section`, `priority`, optional `hidden` and a `data` payload holding its copy, icon and tone. Action widgets also have a `size` (`featured` or `compact`). See `src/types/sdui.ts`.
+2. Each `Widget` is a discriminated union on `type` (`"shortcut" | "action" | "suggestion"`) with `id`, `section`, `priority`, optional `hidden` and a `data` payload holding its copy, icon and tone. Action widgets also have a `size` (`featured` or `compact`). See `src/types/sdui.ts`.
 3. `resolveSections()` removes hidden or empty widgets, sorts them by `priority`, groups them under their sections and drops sections left with no widgets.
 4. `DashboardScreen` picks a component for each widget by `type` and skips unknown types, so a newer server layout can't crash an older client.
 

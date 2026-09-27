@@ -1,3 +1,4 @@
+import { BackLink } from "@/components/Common/BackLink";
 import { useEffect, useState } from "react";
 import { Loading } from "@/components/Common/Loading";
 import { EmptyState } from "@/components/Dashboard/EmptyState";
@@ -19,7 +20,8 @@ export function CoursesScreen() {
 
   return (
     <>
-      <div className="space-y-4 px-5 pb-5 pt-[max(1.25rem,env(safe-area-inset-top))]">
+      <BackLink title="Courses" />
+      <div className="space-y-4 px-5 pb-8 pt-5">
         {!courses ? (
           <Loading label="Loading your schedule" />
         ) : courses.length === 0 ? (

@@ -1,9 +1,18 @@
-export type WidgetType = "action" | "suggestion";
+export type WidgetType = "shortcut" | "action" | "suggestion";
 
 /** Dashboard sections the server can place widgets into. */
-export type SectionId = "actions" | "forYou";
+export type SectionId = "quickActions" | "actions" | "forYou";
 
-export type WidgetIcon = "payment" | "assignment" | "exam" | "event" | "workshop" | "career";
+export type WidgetIcon =
+  | "payment"
+  | "assignment"
+  | "exam"
+  | "event"
+  | "workshop"
+  | "career"
+  | "courses"
+  | "clubs"
+  | "account";
 
 /** Drives the icon and eyebrow color: urgent = maroon, info = neutral, reward = gold. */
 export type WidgetTone = "urgent" | "info" | "reward";
@@ -24,6 +33,12 @@ export interface CardContent {
   to?: string;
 }
 
+/** Round quick-action button that links to another screen. */
+export interface ShortcutWidgetModel extends WidgetBase {
+  type: "shortcut";
+  data: { label: string; icon: WidgetIcon; to: string };
+}
+
 export interface ActionWidgetModel extends WidgetBase {
   type: "action";
   /** Featured cards span the full width; compact cards sit in a two-column grid. */
@@ -36,7 +51,7 @@ export interface SuggestionWidgetModel extends WidgetBase {
   data: CardContent & { meta?: string };
 }
 
-export type Widget = ActionWidgetModel | SuggestionWidgetModel;
+export type Widget = ShortcutWidgetModel | ActionWidgetModel | SuggestionWidgetModel;
 
 export interface SectionModel {
   id: SectionId;
@@ -73,6 +88,8 @@ export function resolveSections(sections: SectionModel[], widgets: Widget[]): Re
 
 export function widgetHasData(widget: Widget): boolean {
   switch (widget.type) {
+    case "shortcut":
+      return widget.data.label.trim().length > 0;
     case "action":
     case "suggestion":
       return widget.data.title.trim().length > 0;

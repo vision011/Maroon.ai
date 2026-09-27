@@ -1,3 +1,4 @@
+import { BackLink } from "@/components/Common/BackLink";
 import { useAuth } from "@/hooks/useAuth";
 
 export function AccountScreen() {
@@ -5,7 +6,8 @@ export function AccountScreen() {
 
   return (
     <>
-      <div className="space-y-4 px-5 pb-5 pt-[max(1.25rem,env(safe-area-inset-top))]">
+      <BackLink title="Account" />
+      <div className="space-y-4 px-5 pb-8 pt-5">
         <section className="card-surface p-5">
           <dl className="space-y-3 text-sm">
             <div className="flex justify-between gap-3">

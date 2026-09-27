@@ -5,10 +5,3 @@ export const WIDGET_ORDER = ["academics", "payments", "clubs"] as const;
 
 /** Cache window for pull-to-refresh (ms). */
 export const REFRESH_CACHE_MS = 10_000;
-
-export const TABS = [
-  { to: "/", label: "Dashboard", icon: "home" },
-  { to: "/courses", label: "Courses", icon: "book" },
-  { to: "/clubs", label: "Clubs", icon: "users" },
-  { to: "/account", label: "Account", icon: "user" },
-] as const;
