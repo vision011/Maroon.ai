@@ -42,7 +42,7 @@ export function LoginScreen() {
           id="internetId"
           value={internetId}
           onChange={(e) => setInternetId(e.target.value)}
-          placeholder="moha2048"
+          placeholder="X500"
           autoCapitalize="none"
           autoCorrect="off"
           autoComplete="username"
