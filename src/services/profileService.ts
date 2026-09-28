@@ -11,14 +11,19 @@ interface ProfileRow {
   student_number: string | null;
   program: string | null;
   graduation_year: number | null;
+  preferred_language: string;
+  plain_language: boolean;
+  transfer_student: boolean | null;
   onboarding_step: string | null;
   onboarded_at: string | null;
+  toured_at: string | null;
 }
 
 const COLUMNS =
-  "id, internet_id, email, full_name, student_number, program, graduation_year, onboarding_step, onboarded_at";
+  "id, internet_id, email, full_name, student_number, program, graduation_year, " +
+  "preferred_language, plain_language, transfer_student, onboarding_step, onboarded_at, toured_at";
 
-const STEPS: readonly OnboardingStep[] = ["welcome", "about", "done"];
+const STEPS: readonly OnboardingStep[] = ["welcome", "language", "about", "done"];
 
 function toStudent(row: ProfileRow): Student {
   const step = STEPS.find((s) => s === row.onboarding_step);
@@ -30,8 +35,12 @@ function toStudent(row: ProfileRow): Student {
     ...(row.student_number ? { studentId: row.student_number } : {}),
     ...(row.program ? { program: row.program } : {}),
     ...(row.graduation_year ? { graduationYear: row.graduation_year } : {}),
+    preferredLanguage: row.preferred_language,
+    plainLanguage: row.plain_language,
+    ...(row.transfer_student !== null ? { transferStudent: row.transfer_student } : {}),
     ...(step ? { onboardingStep: step } : {}),
     ...(row.onboarded_at ? { onboardedAt: row.onboarded_at } : {}),
+    ...(row.toured_at ? { touredAt: row.toured_at } : {}),
   };
 }
 
@@ -42,8 +51,12 @@ function toRow(update: ProfileUpdate): Partial<ProfileRow> {
   if ("studentId" in update) row.student_number = update.studentId?.trim() || null;
   if ("program" in update) row.program = update.program?.trim() || null;
   if ("graduationYear" in update) row.graduation_year = update.graduationYear ?? null;
+  if ("preferredLanguage" in update) row.preferred_language = update.preferredLanguage ?? "en";
+  if ("plainLanguage" in update) row.plain_language = update.plainLanguage ?? false;
+  if ("transferStudent" in update) row.transfer_student = update.transferStudent ?? null;
   if ("onboardingStep" in update) row.onboarding_step = update.onboardingStep ?? null;
   if ("onboardedAt" in update) row.onboarded_at = update.onboardedAt ?? null;
+  if ("touredAt" in update) row.toured_at = update.touredAt ?? null;
   return row;
 }
 

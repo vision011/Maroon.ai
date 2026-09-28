@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { WidgetSkeleton } from "@/components/Common/Loading";
 import { ChatBar } from "@/components/Chat/ChatBar";
 import { ActionCard } from "./ActionCard";
@@ -5,6 +6,7 @@ import { SuggestionCard } from "./SuggestionCard";
 import { ShortcutButton } from "./ShortcutButton";
 import { EmptyState } from "./EmptyState";
 import { WidgetError } from "./WidgetCard";
+import { DashboardTour } from "./DashboardTour";
 import { useDashboard } from "@/hooks/useDashboard";
 import { usePullToRefresh } from "@/hooks/usePullToRefresh";
 import { useAuth } from "@/hooks/useAuth";
@@ -27,7 +29,7 @@ function renderWidget(widget: Widget) {
 
 function Section({ section }: { section: ResolvedSection }) {
   return (
-    <section>
+    <section data-tour={section.id}>
       <h2 className="eyebrow px-5">{section.title}</h2>
       {section.id === "quickActions" ? (
         <div className="mt-4 flex justify-around px-3">{section.widgets.map(renderWidget)}</div>
@@ -46,8 +48,21 @@ function Section({ section }: { section: ResolvedSection }) {
 }
 
 export function DashboardScreen() {
-  const { student } = useAuth();
+  const { student, updateProfile } = useAuth();
   const { sections, greeting, loading, error, metadata, refresh } = useDashboard();
+  const [touring, setTouring] = useState(false);
+
+  // First visit after onboarding: tour once the sections it points at have rendered.
+  const ready = !loading && !error && sections.length > 0;
+  useEffect(() => {
+    if (ready && student && !student.touredAt) setTouring(true);
+  }, [ready, student]);
+
+  function finishTour() {
+    setTouring(false);
+    // Best effort: if the save fails, the tour shows again next visit.
+    void updateProfile({ touredAt: new Date().toISOString() }).catch(() => {});
+  }
   const { pulling, pullDistance, refreshing } = usePullToRefresh();
 
   return (
@@ -109,6 +124,9 @@ export function DashboardScreen() {
       </div>
 
       <ChatBar />
+      {touring && student ? (
+        <DashboardTour preferredLanguage={student.preferredLanguage} onFinish={finishTour} />
+      ) : null}
     </div>
   );
 }

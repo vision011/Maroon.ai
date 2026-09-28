@@ -1,8 +1,24 @@
+import { useState } from "react";
+import { useNavigate } from "@tanstack/react-router";
 import { BackLink } from "@/components/Common/BackLink";
+import { FormError } from "@/components/Auth/AuthShell";
 import { useAuth } from "@/hooks/useAuth";
 
 export function AccountScreen() {
-  const { student, logout } = useAuth();
+  const { student, logout, updateProfile } = useAuth();
+  const navigate = useNavigate();
+  const [error, setError] = useState<string | null>(null);
+
+  /** Clears the tour flag so the dashboard shows the tour again. */
+  async function replayTour() {
+    setError(null);
+    try {
+      await updateProfile({ touredAt: undefined });
+      void navigate({ to: "/" });
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Couldn't restart the tour. Try again.");
+    }
+  }
 
   return (
     <>
@@ -28,6 +44,15 @@ export function AccountScreen() {
             <li>· Usage analytics for widget ordering</li>
           </ul>
         </section>
+
+        <button
+          type="button"
+          onClick={() => void replayTour()}
+          className="tap-highlight-none w-full rounded-lg border border-input py-3 text-sm font-semibold"
+        >
+          Replay the dashboard tour
+        </button>
+        <FormError message={error} />
 
         <button
           type="button"

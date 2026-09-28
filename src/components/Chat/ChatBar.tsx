@@ -63,7 +63,7 @@ export function ChatBar() {
   return (
     <>
       <div className="fixed inset-x-0 bottom-0 z-20 bg-gradient-to-t from-background via-background/90 to-transparent px-4 pb-[max(1rem,env(safe-area-inset-bottom))] pt-6">
-        <div className="mx-auto max-w-lg">
+        <div className="mx-auto max-w-lg" data-tour="goldy">
           <ChatInput value={draft} onChange={setDraft} onSubmit={submit} />
         </div>
       </div>
