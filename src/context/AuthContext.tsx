@@ -1,21 +1,18 @@
 import { createContext, useCallback, useEffect, useMemo, useState, type ReactNode } from "react";
-import type { AuthSession, Student } from "@/types";
-
-const STORAGE_KEY = "umn.auth.session";
-
-const MOCK_STUDENT: Student = {
-  name: "Salah Mohamoud",
-  studentId: "1234567",
-  email: "mohamoud@umn.edu",
-  program: "B.S. Computer Science",
-};
+import { authService, type SignUpResult } from "@/services/authService";
+import { profileService } from "@/services/profileService";
+import type { AuthSession, ProfileUpdate, SignUpDetails, Student } from "@/types";
 
 export interface AuthContextValue {
   student: Student | null;
   token: string | null;
   isAuthenticated: boolean;
   isReady: boolean;
+  /** Signed in but hasn't finished onboarding yet. */
+  needsOnboarding: boolean;
   login: (internetId: string, password: string) => Promise<void>;
+  signUp: (details: SignUpDetails) => Promise<SignUpResult>;
+  updateProfile: (update: ProfileUpdate) => Promise<void>;
   logout: () => void;
 }
 
@@ -25,32 +22,52 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [session, setSession] = useState<AuthSession | null>(null);
   const [isReady, setIsReady] = useState(false);
 
-  // Read persisted token after hydration to avoid SSR mismatches.
+  // Restore the Supabase session after hydration to avoid SSR mismatches.
   useEffect(() => {
-    try {
-      const raw = window.localStorage.getItem(STORAGE_KEY);
-      if (raw) setSession(JSON.parse(raw) as AuthSession);
-    } catch {
-      /* ignore corrupt storage */
-    }
-    setIsReady(true);
+    let active = true;
+    authService
+      .getSession()
+      .then((restored) => {
+        if (active) setSession(restored);
+      })
+      .catch(() => {
+        /* treat an unreadable session as signed out */
+      })
+      .finally(() => {
+        if (active) setIsReady(true);
+      });
+    const unsubscribe = authService.onChange((next) => {
+      if (active) setSession(next);
+    });
+    return () => {
+      active = false;
+      unsubscribe();
+    };
   }, []);
 
   const login = useCallback(async (internetId: string, password: string) => {
-    // TODO: replace with real UMN SSO exchange. The mock accepts any non-empty password
-    // and never stores it.
-    if (!internetId || !password) throw new Error("Enter your Internet ID and password.");
-    const next: AuthSession = {
-      student: { ...MOCK_STUDENT, email: `${internetId || "mohamoud"}@umn.edu` },
-      token: `mock-token-${Date.now()}`,
-    };
-    setSession(next);
-    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+    setSession(await authService.signIn(internetId, password));
   }, []);
+
+  const signUp = useCallback(async (details: SignUpDetails) => {
+    const result = await authService.signUp(details);
+    if (result.status === "signed-in") setSession(result.session);
+    return result;
+  }, []);
+
+  const studentId = session?.student.id;
+  const updateProfile = useCallback(
+    async (update: ProfileUpdate) => {
+      if (!studentId) throw new Error("You're signed out. Sign in again.");
+      const student = await profileService.update(studentId, update);
+      setSession((current) => (current ? { ...current, student } : current));
+    },
+    [studentId],
+  );
 
   const logout = useCallback(() => {
     setSession(null);
-    window.localStorage.removeItem(STORAGE_KEY);
+    void authService.signOut();
   }, []);
 
   const value = useMemo<AuthContextValue>(
@@ -59,10 +76,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       token: session?.token ?? null,
       isAuthenticated: Boolean(session),
       isReady,
+      needsOnboarding: Boolean(session && !session.student.onboardedAt),
       login,
+      signUp,
+      updateProfile,
       logout,
     }),
-    [session, isReady, login, logout],
+    [session, isReady, login, signUp, updateProfile, logout],
   );
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

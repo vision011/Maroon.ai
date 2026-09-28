@@ -10,18 +10,12 @@ export function AccountScreen() {
       <div className="space-y-4 px-5 pb-8 pt-5">
         <section className="card-surface p-5">
           <dl className="space-y-3 text-sm">
-            <div className="flex justify-between gap-3">
-              <dt className="text-muted-foreground">Name</dt>
-              <dd className="font-semibold">{student?.name}</dd>
-            </div>
-            <div className="flex justify-between gap-3">
-              <dt className="text-muted-foreground">Student ID</dt>
-              <dd className="font-semibold">{student?.studentId}</dd>
-            </div>
-            <div className="flex justify-between gap-3">
-              <dt className="text-muted-foreground">Email</dt>
-              <dd className="font-semibold">{student?.email}</dd>
-            </div>
+            <Row label="Name" value={student?.name} />
+            <Row label="Internet ID" value={student?.internetId} />
+            <Row label="Email" value={student?.email} />
+            <Row label="Student ID" value={student?.studentId} />
+            <Row label="Program" value={student?.program} />
+            <Row label="Graduating" value={student?.graduationYear?.toString()} />
           </dl>
         </section>
 
@@ -44,5 +38,16 @@ export function AccountScreen() {
         </button>
       </div>
     </>
+  );
+}
+
+function Row({ label, value }: { label: string; value: string | undefined }) {
+  return (
+    <div className="flex justify-between gap-3">
+      <dt className="text-muted-foreground">{label}</dt>
+      <dd className={value ? "text-right font-semibold" : "text-muted-foreground"}>
+        {value ?? "Not added"}
+      </dd>
+    </div>
   );
 }
