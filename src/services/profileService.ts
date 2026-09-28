@@ -16,11 +16,12 @@ interface ProfileRow {
   transfer_student: boolean | null;
   onboarding_step: string | null;
   onboarded_at: string | null;
+  toured_at: string | null;
 }
 
 const COLUMNS =
   "id, internet_id, email, full_name, student_number, program, graduation_year, " +
-  "preferred_language, plain_language, transfer_student, onboarding_step, onboarded_at";
+  "preferred_language, plain_language, transfer_student, onboarding_step, onboarded_at, toured_at";
 
 const STEPS: readonly OnboardingStep[] = ["welcome", "language", "about", "done"];
 
@@ -39,6 +40,7 @@ function toStudent(row: ProfileRow): Student {
     ...(row.transfer_student !== null ? { transferStudent: row.transfer_student } : {}),
     ...(step ? { onboardingStep: step } : {}),
     ...(row.onboarded_at ? { onboardedAt: row.onboarded_at } : {}),
+    ...(row.toured_at ? { touredAt: row.toured_at } : {}),
   };
 }
 
@@ -54,6 +56,7 @@ function toRow(update: ProfileUpdate): Partial<ProfileRow> {
   if ("transferStudent" in update) row.transfer_student = update.transferStudent ?? null;
   if ("onboardingStep" in update) row.onboarding_step = update.onboardingStep ?? null;
   if ("onboardedAt" in update) row.onboarded_at = update.onboardedAt ?? null;
+  if ("touredAt" in update) row.toured_at = update.touredAt ?? null;
   return row;
 }
 

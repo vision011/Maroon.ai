@@ -21,6 +21,8 @@ export interface Student {
   onboardingStep?: OnboardingStep;
   /** Unset until the student finishes onboarding. */
   onboardedAt?: string;
+  /** Unset until the student finishes or skips the dashboard tour. */
+  touredAt?: string;
 }
 
 /** Profile fields the student can change after sign-up. `undefined` clears a field. */
@@ -36,6 +38,7 @@ export type ProfileUpdate = {
       | "transferStudent"
       | "onboardingStep"
       | "onboardedAt"
+      | "touredAt"
   ]?: Student[K] | undefined;
 };
 
