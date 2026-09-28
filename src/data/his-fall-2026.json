@@ -1,0 +1,4488 @@
+{
+  "term": "Fall 2026",
+  "termCode": "1269",
+  "generatedAt": "2026-09-28T19:46:18.179Z",
+  "sources": {
+    "catalog": "https://courses.umn.edu/campuses/umntc/terms/1269/courses.json?q=course_attribute_id=HIS",
+    "grades": "https://umn.lol (Gopher Grades by Social Coding; UMN public records data)"
+  },
+  "courses": [
+    {
+      "code": "AAS 3875W",
+      "title": "Comparative Race and Ethnicity in U.S. History",
+      "credits": "3",
+      "attributes": [
+        "DSJ",
+        "WI",
+        "HIS"
+      ],
+      "description": "This writing-intensive course examines the racial history of modern America. The focus is placed on how American Indians, African Americans, and immigrants from Europe, Asia, and Latin America struggle over identity, place, and meanings …",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Blegen Hall 135",
+          "instructors": [
+            "Yuichiro Onishi"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 17,
+        "aRate": 0.88,
+        "withdrawRate": 0
+      },
+      "ratings": {
+        "wouldRecommend": 5.7,
+        "deeperUnderstanding": 6,
+        "responses": 6
+      }
+    },
+    {
+      "code": "AFRO 3431",
+      "title": "Early Africa and Its Global Connections",
+      "credits": "3",
+      "attributes": [
+        "GP",
+        "HIS"
+      ],
+      "description": "This course offers a general, introductory survey of African history from the earliest times to around 1860. You need have no prior knowledge of the subject, just interest and enthusiasm. We will explore Africa?s rich and diverse pre-col…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "11:15",
+          "end": "12:30",
+          "location": "Blegen Hall 215",
+          "instructors": [
+            "Iman Mohamed"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 57,
+        "aRate": 0.67,
+        "withdrawRate": 0
+      },
+      "ratings": {
+        "wouldRecommend": 5.7,
+        "deeperUnderstanding": 5.7,
+        "responses": 19
+      }
+    },
+    {
+      "code": "AFRO 3434",
+      "title": "Images of Africa",
+      "credits": "3",
+      "attributes": [
+        "GP",
+        "ONLINE",
+        "HIS"
+      ],
+      "description": "Major themes in African history, from early human development to present.  History of western \"knowledge\" about Africa. Assumptions that have influenced production of African history. Extent to which African history is \"packaged\" for pub…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Blegen Hall 145",
+          "instructors": [
+            "Helena Pohlandt-McCormick"
+          ]
+        }
+      ],
+      "grades": null,
+      "ratings": null
+    },
+    {
+      "code": "AFRO 3864",
+      "title": "African American History: 1619 to 1865",
+      "credits": "3",
+      "attributes": [
+        "CIV",
+        "HIS"
+      ],
+      "description": "Importance of dynamics of class, gender, region, and political ideology. Changing nature of race/racism.",
+      "sections": [
+        {
+          "number": "001",
+          "component": "DIS",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": []
+        }
+      ],
+      "grades": {
+        "students": 25,
+        "aRate": 0.7,
+        "withdrawRate": 0.16
+      },
+      "ratings": null
+    },
+    {
+      "code": "AMES 3372",
+      "title": "History of Women and Family in China, 1550-Present",
+      "credits": "3",
+      "attributes": [
+        "HIS"
+      ],
+      "description": "In this class we will examine women, gender relations, and family in China from about 1550 to the present. We will read fiction, poetry, memoirs, and works by historians, as well as watch films and examine visual evidence. We will always…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Blegen Hall 215",
+          "instructors": [
+            "Ann Waltner"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 15,
+        "aRate": 0.77,
+        "withdrawRate": 0.07
+      },
+      "ratings": null
+    },
+    {
+      "code": "AMES 3576",
+      "title": "Language & Society of the Two Koreas",
+      "credits": "3",
+      "attributes": [
+        "GP",
+        "ONLINE",
+        "HIS"
+      ],
+      "description": "This course is designed to offer an introduction and contrastive analysis of the language and society of the two Koreas; the Republic of Korea (better known as South Korea) and the Democratic People's Republic of Korea (better known as N…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "Completely Online",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "14:30",
+          "end": "15:45",
+          "location": "Twin Cities Remote",
+          "instructors": [
+            "Hangtae Cho"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 268,
+        "aRate": 0.62,
+        "withdrawRate": 0.01
+      },
+      "ratings": {
+        "wouldRecommend": 5.4,
+        "deeperUnderstanding": 5.6,
+        "responses": 10
+      }
+    },
+    {
+      "code": "AMIN 1003",
+      "title": "American Indians in Minnesota",
+      "credits": "3",
+      "attributes": [
+        "DSJ",
+        "08",
+        "HIS"
+      ],
+      "description": "History, culture, and lived experience of American Indian people in Minnesota. Self-representation and histories of Anishinaabe (Ojibwe) and Dakota peoples through film, music, oral traditions, and written texts. Work by non-Indian schol…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "11:15",
+          "end": "12:30",
+          "location": "10 Church Street SE 100",
+          "instructors": [
+            "Iyekiyapiwin Darlene St. Clair"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 4205,
+        "aRate": 0.76,
+        "withdrawRate": 0.02
+      },
+      "ratings": {
+        "wouldRecommend": 4.3,
+        "deeperUnderstanding": 4.7,
+        "responses": 653
+      }
+    },
+    {
+      "code": "AMIN 3871",
+      "title": "American Indian History: Pre-Contact to 1830",
+      "credits": "3",
+      "attributes": [
+        "DSJ",
+        "08",
+        "HIS"
+      ],
+      "description": "American Indian history from the era of ancient Native America to the removal era.  Social, cultural, political, and economic diversity of Native American peoples and Native American experiences with European colonialism.",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "13:00",
+          "end": "14:15",
+          "location": "Blegen Hall 255",
+          "instructors": [
+            "David Aiona Chang (he, his, ?oia)"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 61,
+        "aRate": 0.62,
+        "withdrawRate": 0.03
+      },
+      "ratings": {
+        "wouldRecommend": 5.1,
+        "deeperUnderstanding": 5.6,
+        "responses": 18
+      }
+    },
+    {
+      "code": "AMST 1511",
+      "title": "Americans Abroad:  Rethinking Travel, Culture, & Empire",
+      "credits": "3",
+      "attributes": [
+        "GP",
+        "HIS"
+      ],
+      "description": "In this course, we will look at Americans (including ourselves) who travel abroad and what their experiences, both in the present and historically, tell us about how we imagine others and our/their place in the world. What do these exper…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "14:30",
+          "end": "15:20",
+          "location": null,
+          "instructors": [
+            "Satomi Mitani"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 363,
+        "aRate": 0.81,
+        "withdrawRate": 0.02
+      },
+      "ratings": {
+        "wouldRecommend": 5.2,
+        "deeperUnderstanding": 5.3,
+        "responses": 61
+      }
+    },
+    {
+      "code": "AMST 2011",
+      "title": "The United States since September 11",
+      "credits": "3",
+      "attributes": [
+        "CIV",
+        "ONLINE",
+        "HIS"
+      ],
+      "description": "How American citizenship and nationhood have changed since 9/11. The event and its aftermath in historical perspective. Political, economic, and military antecedents. How 9/11 has changed relations between the U.S. government, U.S. citiz…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "Completely Online",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": "ONLINE",
+          "instructors": [
+            "David Karjanen",
+            "Germaine Lindsay Juan"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 4139,
+        "aRate": 0.8,
+        "withdrawRate": 0.02
+      },
+      "ratings": {
+        "wouldRecommend": 4.9,
+        "deeperUnderstanding": 5.1,
+        "responses": 548
+      }
+    },
+    {
+      "code": "AMST 2031",
+      "title": "Chasing the American Dream: Economic Opportunity & Inequality in the U.S.",
+      "credits": "3",
+      "attributes": [
+        "DSJ",
+        "ONLINE",
+        "HIS"
+      ],
+      "description": "This course begins by focusing on the historical origins and meanings of the American dream. How did this dream of unlimited opportunity come about?  What has it meant in different historical moments and to divergent social groups? And, …",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "13:00",
+          "end": "14:15",
+          "location": "Fraser Hall 102",
+          "instructors": [
+            "Brenda Child"
+          ]
+        },
+        {
+          "number": "002",
+          "component": "LEC",
+          "mode": "Completely Online",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": "ONLINE",
+          "instructors": [
+            "David Karjanen"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 1650,
+        "aRate": 0.77,
+        "withdrawRate": 0.03
+      },
+      "ratings": {
+        "wouldRecommend": 4.9,
+        "deeperUnderstanding": 5.3,
+        "responses": 391
+      }
+    },
+    {
+      "code": "AMST 3112",
+      "title": "Prince, Porn, and Public Space: The Cultural Politics of the Twin Cities in the 1980s",
+      "credits": "3",
+      "attributes": [
+        "DSJ",
+        "HIS"
+      ],
+      "description": "This course uses music (especially Prince and the Replacements), debates around pornography/sex, and shifts around access to public space in order to explore the local culture and national importance of the Twin Cities during the 1980s.",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Anderson Hall 270",
+          "instructors": [
+            "Elliott Powell"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 1160,
+        "aRate": 0.92,
+        "withdrawRate": 0.02
+      },
+      "ratings": {
+        "wouldRecommend": 5.7,
+        "deeperUnderstanding": 5.7,
+        "responses": 228
+      }
+    },
+    {
+      "code": "AMST 3253W",
+      "title": "American Popular Culture and Politics: 1940 to the Present",
+      "credits": "4",
+      "attributes": [
+        "CIV",
+        "WI",
+        "HIS"
+      ],
+      "description": "Historical analysis of how popular arts represent issues of gender, race, consumerism, and citizenship. How popular artists define boundaries of citizenship and public life: inclusions/exclusions in polity and national identity. How popu…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "11:15",
+          "end": "12:30",
+          "location": "Murphy Hall 130",
+          "instructors": [
+            "Molly Ball"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 1661,
+        "aRate": 0.73,
+        "withdrawRate": 0.02
+      },
+      "ratings": {
+        "wouldRecommend": 5.3,
+        "deeperUnderstanding": 5.3,
+        "responses": 518
+      }
+    },
+    {
+      "code": "ANSC 1701",
+      "title": "Historical Influence of the Horse on Society",
+      "credits": "3",
+      "attributes": [
+        "HIS"
+      ],
+      "description": "Concepts of historical inquiry using the powerful/changing relationship between Man and horse. Students function as historians: framing questions, searching for appropriate sources, developing explanation model with reasoned\narguments, a…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "Completely Online",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": "ONLINE",
+          "instructors": [
+            "Melissa Palmer"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 2093,
+        "aRate": 0.8,
+        "withdrawRate": 0.02
+      },
+      "ratings": {
+        "wouldRecommend": 5.4,
+        "deeperUnderstanding": 5.5,
+        "responses": 254
+      }
+    },
+    {
+      "code": "ANTH 3009",
+      "title": "Prehistoric Pathways to World Civilizations",
+      "credits": "3",
+      "attributes": [
+        "HIS"
+      ],
+      "description": "How did complex urban societies first develop? This course addresses this question in ten regions of the world including Maya Mesoamerica, Inca South America, Sumerian Near East, Shang Civilization in East Asia, and early Greece and Rome.",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Anderson Hall 230",
+          "instructors": [
+            "Peter Wells"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 257,
+        "aRate": 0.52,
+        "withdrawRate": 0.04
+      },
+      "ratings": {
+        "wouldRecommend": 5.3,
+        "deeperUnderstanding": 5.5,
+        "responses": 45
+      }
+    },
+    {
+      "code": "ANTH 3327W",
+      "title": " Inca, Aztec & Maya Civilizations",
+      "credits": "3",
+      "attributes": [
+        "HIS",
+        "WI"
+      ],
+      "description": "This course is an intensive examination of the emergence, growth, and conquest of native civilizations in ancient America, focusing on the Maya, Aztec, and Inca states. Lectures and discussions examine the culture and history of these Na…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "13:00",
+          "end": "14:15",
+          "location": "Blegen Hall 130",
+          "instructors": [
+            "Sof?a Pacheco-Fores"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 239,
+        "aRate": 0.61,
+        "withdrawRate": 0.02
+      },
+      "ratings": {
+        "wouldRecommend": 5.4,
+        "deeperUnderstanding": 5.5,
+        "responses": 42
+      }
+    },
+    {
+      "code": "ARTH 1004W",
+      "title": "Introduction to Asian Art",
+      "credits": "4",
+      "attributes": [
+        "HIS",
+        "ONLINE",
+        "WI"
+      ],
+      "description": "This one-semester course is an introduction to painting, sculpture, and architecture from South, Southeast, and East Asia. It will cover works from ancient cultures to those of contemporary Asian diasporas. Resisting the impossible task …",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "Completely Online",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": "ONLINE",
+          "instructors": [
+            "Anna Lise Seastrand",
+            "Daniel Greenberg"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 1339,
+        "aRate": 0.43,
+        "withdrawRate": 0.04
+      },
+      "ratings": {
+        "wouldRecommend": 4.8,
+        "deeperUnderstanding": 5.1,
+        "responses": 438
+      }
+    },
+    {
+      "code": "CHLS 1102",
+      "title": "Americanos: U.S. Latino History, Politics, and Culture",
+      "credits": "3",
+      "attributes": [
+        "DSJ",
+        "HIS"
+      ],
+      "description": "This lecture course examines the historical and cultural knowledge and the complex relationship that Latinos have to the U.S. and their countries of origin in the Americas. We study the influence of social, cultural, and political dynami…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Blegen Hall 317",
+          "instructors": [
+            "Eduardo Bautista Duran"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 67,
+        "aRate": 0.41,
+        "withdrawRate": 0.01
+      },
+      "ratings": null
+    },
+    {
+      "code": "CHLS 1102H",
+      "title": "Honors - Americanos: U.S. Latino History, Politics, and Culture",
+      "credits": "3",
+      "attributes": [
+        "DSJ",
+        "HON",
+        "HIS"
+      ],
+      "description": "This lecture course examines the historical and cultural knowledge and the complex relationship that Latinos have to the U.S. and their countries of origin in the Americas. We study the influence of social, cultural, and political dynami…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Blegen Hall 317",
+          "instructors": [
+            "Eduardo Bautista Duran"
+          ]
+        }
+      ],
+      "grades": null,
+      "ratings": null
+    },
+    {
+      "code": "CHLS 3888",
+      "title": "Abajo Con La Migra: Immigration and the Latino/a Experience",
+      "credits": "3",
+      "attributes": [
+        "DSJ",
+        "HIS"
+      ],
+      "description": "As part of a longer tradition in Latino/a/x radical thought, this upper-division, interdisciplinary course explores the experiences of migrants from Latin America to the United States in the 20th and 21st centuries, and its roots in colo…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "11:15",
+          "end": "12:30",
+          "location": "Scott Hall 4",
+          "instructors": [
+            "Jimmy Patino"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 29,
+        "aRate": 0.59,
+        "withdrawRate": 0
+      },
+      "ratings": null
+    },
+    {
+      "code": "CI 1121",
+      "title": "Educational Movements Past and Present: Multicultural Perspectives",
+      "credits": "4",
+      "attributes": [
+        "DSJ",
+        "HIS"
+      ],
+      "description": "Students will explore diverse historical perspectives regarding educational movements in the U.S. since the Civil War. Through challenging questions and problems in educational history, students will develop critical frameworks necessary…",
+      "sections": [
+        {
+          "number": "003",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "12:20",
+          "end": "14:15",
+          "location": "Peik Hall 325",
+          "instructors": [
+            "Colleen Clements"
+          ]
+        },
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "13:25",
+          "end": "15:20",
+          "location": "Peik Hall 40",
+          "instructors": [
+            "Colleen Clements"
+          ]
+        },
+        {
+          "number": "002",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "13:25",
+          "end": "15:20",
+          "location": "Peik Hall 355",
+          "instructors": [
+            "Ryan Oto"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 1370,
+        "aRate": 0.77,
+        "withdrawRate": 0.02
+      },
+      "ratings": {
+        "wouldRecommend": 5.5,
+        "deeperUnderstanding": 5.6,
+        "responses": 559
+      }
+    },
+    {
+      "code": "CNRC 1002",
+      "title": "World of Greece",
+      "credits": "3",
+      "attributes": [
+        "HIS",
+        "08"
+      ],
+      "description": "Ancient Greek civilization, from second millenium BCE to Roman period. Art/archaeology, philosophy, science, literature, social/political institutions. Focuses on connections with contemporary cultures corresponding to Ancient Near East.",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed",
+            "Fri"
+          ],
+          "start": "11:15",
+          "end": "12:05",
+          "location": "216 Pillsbury Drive 275",
+          "instructors": [
+            "S. Douglas Olson"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 559,
+        "aRate": 0.39,
+        "withdrawRate": 0.08
+      },
+      "ratings": null
+    },
+    {
+      "code": "CNRC 1082",
+      "title": "Jesus in History, Art & Culture",
+      "credits": "3",
+      "attributes": [
+        "HIS",
+        "08"
+      ],
+      "description": "Does time, place, and culture affect our picture of Jesus? We'll start by constructing our own Jesus story and then go backwards in time to examine modern times (film, music, and modern art), pre-Civil War America (views of Jesus from en…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "DIS",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Elliott Hall N119",
+          "instructors": [
+            "Stephen Ahearne-Kroll"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 48,
+        "aRate": 0.68,
+        "withdrawRate": 0.06
+      },
+      "ratings": null
+    },
+    {
+      "code": "CNRC 3071",
+      "title": "Greek and Hellenistic Religions",
+      "credits": "3",
+      "attributes": [
+        "HIS"
+      ],
+      "description": "Greek religion from the Bronze Age to Hellenistic times. Sources include literature, art, and archaeology. Homer and Olympian deities, ritual performance, prayer/sacrifice, temple architecture, death and the afterlife, mystery cults, phi…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Folwell Hall 116",
+          "instructors": [
+            "Ranjani Atur"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 73,
+        "aRate": 0.77,
+        "withdrawRate": 0.1
+      },
+      "ratings": {
+        "wouldRecommend": 5.6,
+        "deeperUnderstanding": 5.9,
+        "responses": 9
+      }
+    },
+    {
+      "code": "CNRC 3092",
+      "title": "Jesus in History, Art & Culture",
+      "credits": "3",
+      "attributes": [
+        "HIS"
+      ],
+      "description": "Does time, place, and culture affect our picture of Jesus? We'll start by constructing our own Jesus story and then go backwards in time to examine modern times (film, music, and modern art), pre-Civil War America (views of Jesus from en…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "DIS",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Elliott Hall N119",
+          "instructors": [
+            "Stephen Ahearne-Kroll"
+          ]
+        }
+      ],
+      "grades": null,
+      "ratings": null
+    },
+    {
+      "code": "CNRC 3162",
+      "title": "Roman Art and Archaeology",
+      "credits": "3",
+      "attributes": [
+        "HIS"
+      ],
+      "description": "The visual culture of the ancient world offers insight into the elite levels of ancient Rome's population, while archaeological evidence sheds light on the everyday people who helped build this powerful civilization. Combined, these aspe…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "13:00",
+          "end": "14:15",
+          "location": "Wulling Hall 220",
+          "instructors": [
+            "Joe Sheppard"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 19,
+        "aRate": 0.89,
+        "withdrawRate": 0
+      },
+      "ratings": null
+    },
+    {
+      "code": "CNRC 3505",
+      "title": "Scripture and the Other: Rethinking the Bible After the Holocaust",
+      "credits": "3",
+      "attributes": [
+        "GP",
+        "HIS"
+      ],
+      "description": "How do the Holocaust and other genocides transform our reading of the Bible? In this interdisciplinary course, we explore how religious ideas shape political philosophy, influence government policies, and legal rulings that enlarge or de…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "14:30",
+          "end": "15:45",
+          "location": "216 Pillsbury Drive 110",
+          "instructors": [
+            "Bernard Levinson"
+          ]
+        }
+      ],
+      "grades": null,
+      "ratings": null
+    },
+    {
+      "code": "CNRC 3617",
+      "title": "Pagans, Christians, Barbarians: The World of Late Antiquity",
+      "credits": "3",
+      "attributes": [
+        "GP",
+        "HIS"
+      ],
+      "description": "Between classical and medieval, pagan and Christian, Roman and barbarian, the late antique world was a dynamic age. This course will focus on the Mediterranean region from the 2nd to the mid-7th century exploring such topics as the conve…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "11:15",
+          "end": "12:30",
+          "location": "Blegen Hall 110",
+          "instructors": [
+            "Andrea Sterk"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 12,
+        "aRate": 0.73,
+        "withdrawRate": 0.08
+      },
+      "ratings": null
+    },
+    {
+      "code": "CSCL 1501W",
+      "title": "Reading History: Theory and Practice",
+      "credits": "3",
+      "attributes": [
+        "HIS",
+        "08",
+        "WI"
+      ],
+      "description": "What is history? How can we understand its meanings/uses? Emphasizes practice in reading cultural texts from various historical perspectives.",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Kolthoff Hall 140",
+          "instructors": [
+            null
+          ]
+        },
+        {
+          "number": "002",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "13:00",
+          "end": "14:15",
+          "location": "Tate Hall B55",
+          "instructors": [
+            "Heidar Azodanloo"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 807,
+        "aRate": 0.65,
+        "withdrawRate": 0.04
+      },
+      "ratings": {
+        "wouldRecommend": 4.8,
+        "deeperUnderstanding": 5,
+        "responses": 188
+      }
+    },
+    {
+      "code": "EAS 1463",
+      "title": "An Introduction to Imperialism in Asia, 1850-Present",
+      "credits": "3",
+      "attributes": [
+        "GP",
+        "HIS"
+      ],
+      "description": "Organized around a series of themes, this course will begin with a broad overview of imperialism in Asia before diving into economics of empire, technologies of imperialism, race and gender, nationalism and the end of empire, and neocolo…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Blegen Hall 425",
+          "instructors": [
+            "Mai Na Lee"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 49,
+        "aRate": 0.42,
+        "withdrawRate": 0.06
+      },
+      "ratings": {
+        "wouldRecommend": 4.4,
+        "deeperUnderstanding": 5.1,
+        "responses": 14
+      }
+    },
+    {
+      "code": "EAS 3469",
+      "title": "History of Women and Family in China, 1550-Present",
+      "credits": "3",
+      "attributes": [
+        "HIS"
+      ],
+      "description": "In this class, we will examine women, gender relations, and family in China from about 1550 to the present. We will read fiction, poetry, memoirs, and works by historians, as well as watch films and examine visual evidence. We will alway…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Blegen Hall 215",
+          "instructors": [
+            "Ann Waltner"
+          ]
+        }
+      ],
+      "grades": null,
+      "ratings": null
+    },
+    {
+      "code": "ENGL 3003W",
+      "title": "Historical Survey of British Literatures I",
+      "credits": "4",
+      "attributes": [
+        "HIS",
+        "08",
+        "WI"
+      ],
+      "description": "This course will provide a historical survey of British literature from the Middle Ages to the end of the eighteenth century. Our focus will be on tracing the interactions between literature and wider British culture as well as on tracin…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "12:20",
+          "end": "14:15",
+          "location": "Pillsbury Hall 214",
+          "instructors": [
+            "Andrew Scheil"
+          ]
+        },
+        {
+          "number": "002",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "14:30",
+          "end": "16:25",
+          "location": "Peik Hall 215",
+          "instructors": [
+            "Eric Daigre"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 1018,
+        "aRate": 0.66,
+        "withdrawRate": 0.06
+      },
+      "ratings": {
+        "wouldRecommend": 5.1,
+        "deeperUnderstanding": 5.5,
+        "responses": 258
+      }
+    },
+    {
+      "code": "ENGL 3004W",
+      "title": "Historical Survey of British Literatures II",
+      "credits": "4",
+      "attributes": [
+        "HIS",
+        "08",
+        "WI"
+      ],
+      "description": "In this wide-ranging survey of British and post-colonial literature from the late eighteenth century to the present, we will explore representative literary texts and genres from British Romanticism, the Victorian period, Modernism, and …",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "14:30",
+          "end": "16:25",
+          "location": "Pillsbury Hall 211",
+          "instructors": [
+            "Ann Tandy-Treiber"
+          ]
+        },
+        {
+          "number": "002",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "09:05",
+          "end": "11:00",
+          "location": "Akerman Hall 227",
+          "instructors": [
+            "Yarrow Knittel"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 506,
+        "aRate": 0.67,
+        "withdrawRate": 0.02
+      },
+      "ratings": {
+        "wouldRecommend": 5.3,
+        "deeperUnderstanding": 5.6,
+        "responses": 160
+      }
+    },
+    {
+      "code": "ENGL 3025",
+      "title": "The End of the World in Literature and History",
+      "credits": "3",
+      "attributes": [
+        "HIS"
+      ],
+      "description": "For at least two and a half millennia, prophets, politicians, and poets have crafted terrifying accounts about the end of the world. This comparatist seminar examines the way different cultures have imagined a final apocalypse with parti…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "DIS",
+          "mode": "Completely Online",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": "ONLINE",
+          "instructors": [
+            "Jennifer Jodell"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 533,
+        "aRate": 0.76,
+        "withdrawRate": 0.04
+      },
+      "ratings": {
+        "wouldRecommend": 5.4,
+        "deeperUnderstanding": 5.6,
+        "responses": 149
+      }
+    },
+    {
+      "code": "FRIT 3656",
+      "title": "Existentialism",
+      "credits": "3",
+      "attributes": [
+        "CIV",
+        "HIS"
+      ],
+      "description": "What do we mean when we call something \"existential?\"  What do we mean when we speak of an \"existential\" crisis? We seem to mean that our core beliefs and assumptions are affected and the relationship with our environment is ruptured; we…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "14:30",
+          "end": "15:45",
+          "location": "Blegen Hall 435",
+          "instructors": [
+            "Philip Bold"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 36,
+        "aRate": 0.68,
+        "withdrawRate": 0.06
+      },
+      "ratings": {
+        "wouldRecommend": 4.8,
+        "deeperUnderstanding": 5,
+        "responses": 3
+      }
+    },
+    {
+      "code": "GER 3633",
+      "title": "The Holocaust: Memory, Narrative, History",
+      "credits": "3",
+      "attributes": [
+        "GP",
+        "HIS"
+      ],
+      "description": "Decades after the end of the second world war, the Holocaust continues to play a formative role in public discourse about the past in Germany and Austria. As the event itself recedes into the past, our knowledge about the Holocaust has b…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "11:15",
+          "end": "12:30",
+          "location": "Folwell Hall 12",
+          "instructors": [
+            "Leslie Morris"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 156,
+        "aRate": 0.73,
+        "withdrawRate": 0.01
+      },
+      "ratings": {
+        "wouldRecommend": 5.2,
+        "deeperUnderstanding": 5.7,
+        "responses": 39
+      }
+    },
+    {
+      "code": "GER 3655",
+      "title": "Cultures of Control and Surveillance in Germany and the US",
+      "credits": "3",
+      "attributes": [
+        "CIV",
+        "HIS"
+      ],
+      "description": "Discourses and practices of social control and surveillance in comparative/historical perspective. Explores the central conceptual condition for modern ethics: the relationship between individual and society. Paintings, manuals, scholarl…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "DIS",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Folwell Hall 112",
+          "instructors": [
+            "Veronica Williamson"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 128,
+        "aRate": 0.85,
+        "withdrawRate": 0.05
+      },
+      "ratings": {
+        "wouldRecommend": 4.8,
+        "deeperUnderstanding": 4.9,
+        "responses": 12
+      }
+    },
+    {
+      "code": "GLOS 3152W",
+      "title": "Art Under Authoritarianism: Theatre and Music in the Global South",
+      "credits": "3",
+      "attributes": [
+        "HIS",
+        "WI"
+      ],
+      "description": "What does it mean to be an artist in the Global South? This is a question that has been asked in different ways in twentieth century decolonization movements and the transnational media cultures of the twenty-first century. In Latin Amer…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "13:25",
+          "end": "15:20",
+          "location": "Hubert H. Humphrey School 30",
+          "instructors": [
+            "Sonali Pahwa",
+            "Katie Willer"
+          ]
+        }
+      ],
+      "grades": null,
+      "ratings": null
+    },
+    {
+      "code": "GSD 3656",
+      "title": "Existentialism",
+      "credits": "3",
+      "attributes": [
+        "CIV",
+        "HIS"
+      ],
+      "description": "What do we mean when we call something \"existential?\"  What do we mean when we speak of an \"existential\" crisis? We seem to mean that our core beliefs and assumptions are affected and the relationship with our environment is ruptured; we…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "14:30",
+          "end": "15:45",
+          "location": "Blegen Hall 435",
+          "instructors": [
+            "Philip Bold"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 25,
+        "aRate": 0.61,
+        "withdrawRate": 0.08
+      },
+      "ratings": {
+        "wouldRecommend": 5,
+        "deeperUnderstanding": 5.3,
+        "responses": 6
+      }
+    },
+    {
+      "code": "GWSS 3469",
+      "title": "History of Women and family in China, 1600-2000",
+      "credits": "3",
+      "attributes": [
+        "HIS"
+      ],
+      "description": "In this class, we will examine women, gender relations, and family in China from about 1550 to the present. We will read fiction, poetry, memoirs, and works by historians, as well as watch films and examine visual evidence. We will alway…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Blegen Hall 215",
+          "instructors": [
+            "Ann Waltner"
+          ]
+        }
+      ],
+      "grades": null,
+      "ratings": null
+    },
+    {
+      "code": "HIST 1011W",
+      "title": "Civilization and the Environment: World History to 1500",
+      "credits": "4",
+      "attributes": [
+        "ENV",
+        "ONLINE",
+        "WI",
+        "HIS"
+      ],
+      "description": "Sweep of history, from the first prehistoric societies to the dawn of the modern world circa 1500. Forces that pushed humans to continually explore new environments and develop higher levels of social organization and cross-cultural inte…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Willey Hall 175",
+          "instructors": [
+            "Zozan Pehlivan"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 1913,
+        "aRate": 0.64,
+        "withdrawRate": 0.03
+      },
+      "ratings": {
+        "wouldRecommend": 4.7,
+        "deeperUnderstanding": 5.1,
+        "responses": 588
+      }
+    },
+    {
+      "code": "HIST 1082",
+      "title": "Jesus in History, Art & Culture",
+      "credits": "3",
+      "attributes": [
+        "HIS"
+      ],
+      "description": "Does time, place, and culture affect our picture of Jesus? We'll start by constructing our own Jesus story and then go backwards in time to examine modern times (film, music, and modern art), pre-Civil War America (views of Jesus from en…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "DIS",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Elliott Hall N119",
+          "instructors": [
+            "Stephen Ahearne-Kroll"
+          ]
+        }
+      ],
+      "grades": null,
+      "ratings": null
+    },
+    {
+      "code": "HIST 1301W",
+      "title": "Authority and Rebellion: American History to 1865",
+      "credits": "4",
+      "attributes": [
+        "DSJ",
+        "08",
+        "WI",
+        "HIS"
+      ],
+      "description": "Conflict/change, from colonial era through Civil War. colonization/resistance, slavery, nation-building, westward expansion, gender roles, religion, reform, race/ethnicity, immigration, industrialization, class relations. Students use pr…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Willey Hall 125",
+          "instructors": [
+            "J. David Hacker",
+            "Aaron Hall"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 1669,
+        "aRate": 0.64,
+        "withdrawRate": 0.03
+      },
+      "ratings": {
+        "wouldRecommend": 5.2,
+        "deeperUnderstanding": 5.4,
+        "responses": 740
+      }
+    },
+    {
+      "code": "HIST 1307",
+      "title": "Authority and Rebellion: American History to 1865",
+      "credits": "3",
+      "attributes": [
+        "HIS"
+      ],
+      "description": "This course examines the beginnings of American history from the early colonial period through the Civil War. It offers a broad and in-depth look at three tumultuous centuries of conflict and change by investigating the fundamental issue…",
+      "sections": [
+        {
+          "number": "751",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": []
+        },
+        {
+          "number": "739",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            null
+          ]
+        },
+        {
+          "number": "732",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            null
+          ]
+        },
+        {
+          "number": "754",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            null
+          ]
+        },
+        {
+          "number": "753",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Alyce Meyer"
+          ]
+        },
+        {
+          "number": "752",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Alyce Meyer"
+          ]
+        },
+        {
+          "number": "715",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Alyssa Metcalf"
+          ]
+        },
+        {
+          "number": "750",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Carole Rivard"
+          ]
+        },
+        {
+          "number": "738",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Carole Rivard"
+          ]
+        },
+        {
+          "number": "725",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "David Makela"
+          ]
+        },
+        {
+          "number": "723",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "David Makela"
+          ]
+        },
+        {
+          "number": "717",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "David Theisen"
+          ]
+        },
+        {
+          "number": "718",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "David Theisen"
+          ]
+        },
+        {
+          "number": "749",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "David Wollin"
+          ]
+        },
+        {
+          "number": "702",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Dennis Potter"
+          ]
+        },
+        {
+          "number": "700",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Dennis Potter"
+          ]
+        },
+        {
+          "number": "731",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Dennis Potter"
+          ]
+        },
+        {
+          "number": "701",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Erick Harper"
+          ]
+        },
+        {
+          "number": "724",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "James Garofalo"
+          ]
+        },
+        {
+          "number": "706",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Jason Rademacher"
+          ]
+        },
+        {
+          "number": "735",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Jason Telecky"
+          ]
+        },
+        {
+          "number": "734",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Jason Telecky"
+          ]
+        },
+        {
+          "number": "733",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Jason Telecky"
+          ]
+        },
+        {
+          "number": "707",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Jodi Penk"
+          ]
+        },
+        {
+          "number": "705",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Jon Avery Morales"
+          ]
+        },
+        {
+          "number": "712",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Jon Avery Morales"
+          ]
+        },
+        {
+          "number": "719",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Jon Avery Morales"
+          ]
+        },
+        {
+          "number": "720",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Jon Avery Morales"
+          ]
+        },
+        {
+          "number": "722",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Kristina Aars"
+          ]
+        },
+        {
+          "number": "713",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Kristina Aars"
+          ]
+        },
+        {
+          "number": "714",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Kristina Aars"
+          ]
+        },
+        {
+          "number": "727",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Lisa Johnson"
+          ]
+        },
+        {
+          "number": "704",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Lisa Johnson"
+          ]
+        },
+        {
+          "number": "703",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Lisa Johnson"
+          ]
+        },
+        {
+          "number": "710",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Mary Voigt"
+          ]
+        },
+        {
+          "number": "721",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Matthew Helm"
+          ]
+        },
+        {
+          "number": "708",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Megan Gosda"
+          ]
+        },
+        {
+          "number": "716",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Megan Gosda"
+          ]
+        },
+        {
+          "number": "737",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Nolan Patrek"
+          ]
+        },
+        {
+          "number": "711",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Rebecca Swanson"
+          ]
+        },
+        {
+          "number": "709",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Robert Jameson"
+          ]
+        },
+        {
+          "number": "741",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Rod Janikula"
+          ]
+        },
+        {
+          "number": "740",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Rod Janikula"
+          ]
+        },
+        {
+          "number": "748",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Ryan Dresher"
+          ]
+        },
+        {
+          "number": "726",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Thomas Lachermeier"
+          ]
+        },
+        {
+          "number": "729",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Travis MacLeod"
+          ]
+        },
+        {
+          "number": "730",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Travis MacLeod"
+          ]
+        },
+        {
+          "number": "736",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Travis MacLeod"
+          ]
+        },
+        {
+          "number": "728",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": [
+            "Travis MacLeod"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 37,
+        "aRate": 0.61,
+        "withdrawRate": 0.03
+      },
+      "ratings": {
+        "wouldRecommend": 5.7,
+        "deeperUnderstanding": 5.8,
+        "responses": 116
+      }
+    },
+    {
+      "code": "HIST 1308",
+      "title": "Global America: U.S. History Since 1865",
+      "credits": "3",
+      "attributes": [
+        "HIS",
+        "08"
+      ],
+      "description": "U.S. history since Civil War, in global context. Emancipation. Forms of labor. Immigration. Citizenship. Changing conceptions of race/gender. Hot/cold wars. Reform/rights movements. Globalization. State power. Students use primary source…",
+      "sections": [
+        {
+          "number": "702",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": []
+        },
+        {
+          "number": "703",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": []
+        },
+        {
+          "number": "700",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": []
+        },
+        {
+          "number": "701",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": []
+        }
+      ],
+      "grades": null,
+      "ratings": null
+    },
+    {
+      "code": "HIST 1361W",
+      "title": "World War I: A Global History",
+      "credits": "3",
+      "attributes": [
+        "HIS",
+        "WI",
+        "TS"
+      ],
+      "description": "This class takes a global approach to the examination of World War One's causes and consequences. We will look at how the war unfolded in Europe, Africa, and the Middle East. We will also explore the war's impact on North America and Aus…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "13:00",
+          "end": "14:15",
+          "location": "West Bank Skyway Auditorium-20",
+          "instructors": [
+            "Thomas Wolfe"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 175,
+        "aRate": 0.75,
+        "withdrawRate": 0.07
+      },
+      "ratings": {
+        "wouldRecommend": 5.2,
+        "deeperUnderstanding": 5.7,
+        "responses": 47
+      }
+    },
+    {
+      "code": "HIST 1364",
+      "title": "Introduction to Global Environmental History",
+      "credits": "3",
+      "attributes": [
+        "ENV",
+        "HIS"
+      ],
+      "description": "This introductory course focuses on human environment interaction and the role of environmental factors in shaping of world history from the early medieval period, roughly 1000 C.E, to the present day. Beginning with the idea of environm…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "DIS",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "13:00",
+          "end": "14:15",
+          "location": "Blegen Hall 10",
+          "instructors": [
+            "Zozan Pehlivan"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 292,
+        "aRate": 0.61,
+        "withdrawRate": 0.03
+      },
+      "ratings": {
+        "wouldRecommend": 4.1,
+        "deeperUnderstanding": 4.9,
+        "responses": 50
+      }
+    },
+    {
+      "code": "HIST 1463",
+      "title": "An Introduction to Imperialism in Asia, 1850-Present",
+      "credits": "3",
+      "attributes": [
+        "GP",
+        "HIS"
+      ],
+      "description": "Organized around a series of themes, this course will begin with a broad overview of imperialism in Asia before diving into economics of empire, technologies of imperialism, race and gender, nationalism and the end of empire, and neocolo…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Blegen Hall 425",
+          "instructors": [
+            "Mai Na Lee"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 56,
+        "aRate": 0.54,
+        "withdrawRate": 0.05
+      },
+      "ratings": {
+        "wouldRecommend": 4.3,
+        "deeperUnderstanding": 4.8,
+        "responses": 12
+      }
+    },
+    {
+      "code": "HIST 1534",
+      "title": "Introduction to Jewish History and Cultures",
+      "credits": "3",
+      "attributes": [
+        "HIS"
+      ],
+      "description": "This course traces the development of Judaism and Jewish civilizations from their beginnings to the present. With over three millennia as its subject, the course must of necessity be a general survey. Together we will explore the mythic …",
+      "sections": [
+        {
+          "number": "001",
+          "component": "DIS",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "14:30",
+          "end": "15:45",
+          "location": "Hubert H. Humphrey School 25",
+          "instructors": [
+            "Noam Sienna"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 47,
+        "aRate": 0.16,
+        "withdrawRate": 0.15
+      },
+      "ratings": {
+        "wouldRecommend": 5,
+        "deeperUnderstanding": 5.9,
+        "responses": 23
+      }
+    },
+    {
+      "code": "HIST 1811",
+      "title": "The Sixties: History & Memory",
+      "credits": "3",
+      "attributes": [
+        "DSJ",
+        "ONLINE",
+        "HIS"
+      ],
+      "description": "The Sixties was an incredibly dynamic decade in the United States and around the world. It was a decade of powerful social movements from the Civil Rights and Black, Brown, Yellow and Red Power movements to the countercultural, student/c…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "16:00",
+          "end": "17:15",
+          "location": "Blegen Hall 240",
+          "instructors": [
+            "Myra Billund-Phibbs"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 786,
+        "aRate": 0.62,
+        "withdrawRate": 0.04
+      },
+      "ratings": {
+        "wouldRecommend": 4.9,
+        "deeperUnderstanding": 5.2,
+        "responses": 197
+      }
+    },
+    {
+      "code": "HIST 1934",
+      "title": "The History of Tourism: From Global to Local Perspectives",
+      "credits": "3",
+      "attributes": [
+        "HIS",
+        "FR SEMINAR"
+      ],
+      "description": "In this seminar, students will ask what tourism?an activity that many of us engage in, whether in our hometowns or abroad?can teach us about past and present societies. The course has two components, one critical-historical and one pract…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "DIS",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "13:00",
+          "end": "14:15",
+          "location": "Blegen Hall 205",
+          "instructors": [
+            "Igor Tchoukarine"
+          ]
+        }
+      ],
+      "grades": null,
+      "ratings": null
+    },
+    {
+      "code": "HIST 3051",
+      "title": "Ancient Civilization: Near East and Egypt",
+      "credits": "3–4",
+      "attributes": [
+        "HIS",
+        "08"
+      ],
+      "description": "A broad survey of ancient Near Eastern and Egyptian history and culture from the prehistoric to the rise of Persia around 550 B.C.",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "11:15",
+          "end": "12:30",
+          "location": "Blegen Hall 330",
+          "instructors": [
+            "Eva von Dassow"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 109,
+        "aRate": 0.37,
+        "withdrawRate": 0.17
+      },
+      "ratings": {
+        "wouldRecommend": 4.6,
+        "deeperUnderstanding": 5.4,
+        "responses": 42
+      }
+    },
+    {
+      "code": "HIST 3053",
+      "title": "Ancient Civilization: Rome",
+      "credits": "3",
+      "attributes": [
+        "HIS",
+        "08"
+      ],
+      "description": "A broad survey of the culture and history of Rome from its origins to the decline and fall of the Roman Empire in the third and fourth centuries A.D.",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "14:30",
+          "end": "15:45",
+          "location": "Blegen Hall 145",
+          "instructors": [
+            "Jack O'connell"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 267,
+        "aRate": 0.49,
+        "withdrawRate": 0.07
+      },
+      "ratings": {
+        "wouldRecommend": 5.4,
+        "deeperUnderstanding": 5.7,
+        "responses": 65
+      }
+    },
+    {
+      "code": "HIST 3066",
+      "title": "Prehistoric Pathways to World Civilization",
+      "credits": "3",
+      "attributes": [
+        "HIS"
+      ],
+      "description": "How did complex urban societies first develop? This course addresses this question in ten regions of the world, including Maya Mesoamerica, Inca South America, Sumerian Near East, Shang Civilization in East Asia and early Greece and Rome.",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Anderson Hall 230",
+          "instructors": [
+            "Peter Wells"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 145,
+        "aRate": 0.53,
+        "withdrawRate": 0.1
+      },
+      "ratings": {
+        "wouldRecommend": 5.4,
+        "deeperUnderstanding": 5.8,
+        "responses": 23
+      }
+    },
+    {
+      "code": "HIST 3092",
+      "title": "Jesus in History, Art & Culture",
+      "credits": "3",
+      "attributes": [
+        "HIS"
+      ],
+      "description": "Does time, place, and culture affect our picture of Jesus? We'll start by constructing our own Jesus story and then go backwards in time to examine modern times (film, music, and modern art), pre-Civil War America (views of Jesus from en…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "DIS",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Elliott Hall N119",
+          "instructors": [
+            "Stephen Ahearne-Kroll"
+          ]
+        }
+      ],
+      "grades": null,
+      "ratings": null
+    },
+    {
+      "code": "HIST 3244",
+      "title": "History of Eastern Europe",
+      "credits": "3",
+      "attributes": [
+        "GP",
+        "HIS"
+      ],
+      "description": "History of Central and Eastern Europe from the late 18th century to modern times, culture and society, nationalism and formation of nation states, the Bolshevik Revolution, the fall of Austria-Hungary, the interwar period, fascism, World…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "11:15",
+          "end": "12:30",
+          "location": "Blegen Hall 125",
+          "instructors": [
+            "Igor Tchoukarine"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 345,
+        "aRate": 0.56,
+        "withdrawRate": 0.06
+      },
+      "ratings": {
+        "wouldRecommend": 5.3,
+        "deeperUnderstanding": 5.6,
+        "responses": 83
+      }
+    },
+    {
+      "code": "HIST 3287",
+      "title": "Seeing History through Comics: New Perspectives on the Contentious Past",
+      "credits": "3",
+      "attributes": [
+        "CIV",
+        "HIS"
+      ],
+      "description": "Comic-form histories offer new perspectives on the past. Focusing on cases of contentious history, this course will examine how varying perspectives (shaped by class, gender, race, or geo-political position) appear in comic histories. We…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "13:00",
+          "end": "14:15",
+          "location": "Blegen Hall 135",
+          "instructors": [
+            "Sheer Ganor"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 90,
+        "aRate": 0.79,
+        "withdrawRate": 0.04
+      },
+      "ratings": {
+        "wouldRecommend": 5.8,
+        "deeperUnderstanding": 5.8,
+        "responses": 28
+      }
+    },
+    {
+      "code": "HIST 3361W",
+      "title": "World War I: A Global History",
+      "credits": "3",
+      "attributes": [
+        "HIS",
+        "WI",
+        "TS"
+      ],
+      "description": "This class takes a global approach to the examination of the causes and consequences of World War I. We will look at how the war unfolded in Europe, Africa, and the Middle East. We will also explore the war's impact on North America and …",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "13:00",
+          "end": "14:15",
+          "location": "West Bank Skyway Auditorium-20",
+          "instructors": [
+            "Thomas Wolfe"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 204,
+        "aRate": 0.7,
+        "withdrawRate": 0.07
+      },
+      "ratings": {
+        "wouldRecommend": 5.1,
+        "deeperUnderstanding": 5.5,
+        "responses": 47
+      }
+    },
+    {
+      "code": "HIST 3401W",
+      "title": "Early Latin America to 1825",
+      "credits": "4",
+      "attributes": [
+        "GP",
+        "08",
+        "WI",
+        "HIS"
+      ],
+      "description": "Societies of Americas, Spain, and Portugal before contact. Interactions among Native Americans, African slaves, and Europeans, from colonization through independence. Religion, resistance, labor, gender, race. Primary sources, historical…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Blegen Hall 220",
+          "instructors": [
+            "Sarah Chambers"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 188,
+        "aRate": 0.47,
+        "withdrawRate": 0.09
+      },
+      "ratings": {
+        "wouldRecommend": 5.3,
+        "deeperUnderstanding": 5.6,
+        "responses": 30
+      }
+    },
+    {
+      "code": "HIST 3412",
+      "title": "Soccer: Around the World with the Beautiful Game",
+      "credits": "3",
+      "attributes": [
+        "CIV",
+        "HIS"
+      ],
+      "description": "How did a kicking game played in a few English schools in the mid-nineteenth century go on to become the most popular organized pastime the world has ever known? In this class, we chart soccer's unlikely rise to global prominence and exp…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "11:15",
+          "end": "12:30",
+          "location": "Rapson Hall 56",
+          "instructors": [
+            "Andre Kobayashi Deckrow"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 850,
+        "aRate": 0.77,
+        "withdrawRate": 0.03
+      },
+      "ratings": {
+        "wouldRecommend": 5.2,
+        "deeperUnderstanding": 5.4,
+        "responses": 90
+      }
+    },
+    {
+      "code": "HIST 3417W",
+      "title": "Food in History",
+      "credits": "3",
+      "attributes": [
+        "ENV",
+        "ONLINE",
+        "WI",
+        "HIS"
+      ],
+      "description": "Significance of food in society, from earliest times to present. Why we eat what we eat. How foods have been \"globalized.\" Dietary effects of industrial modernity. Material culture, social beliefs. Examples from around the world.",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "11:15",
+          "end": "12:30",
+          "location": "Blegen Hall 317",
+          "instructors": [
+            "Tracey Deutsch"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 408,
+        "aRate": 0.67,
+        "withdrawRate": 0.01
+      },
+      "ratings": {
+        "wouldRecommend": 5.5,
+        "deeperUnderstanding": 5.5,
+        "responses": 17
+      }
+    },
+    {
+      "code": "HIST 3431",
+      "title": "Early Africa and Its Global Connections",
+      "credits": "3",
+      "attributes": [
+        "GP",
+        "HIS"
+      ],
+      "description": "This course offers a general, introductory survey of African history from the earliest times to around 1860. You need have no prior knowledge of the subject, just interest and enthusiasm. We will explore Africa?s rich and diverse pre-col…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "11:15",
+          "end": "12:30",
+          "location": "Blegen Hall 215",
+          "instructors": [
+            "Iman Mohamed"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 67,
+        "aRate": 0.61,
+        "withdrawRate": 0.04
+      },
+      "ratings": null
+    },
+    {
+      "code": "HIST 3433",
+      "title": "Images of Africa",
+      "credits": "3",
+      "attributes": [
+        "GP",
+        "ONLINE",
+        "HIS"
+      ],
+      "description": "Major themes in African history, from early human development to present.  History of western \"knowledge\" about Africa. Assumptions that have influenced production of African history. Extent to which African history is \"packaged\" for pub…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Blegen Hall 145",
+          "instructors": [
+            "Helena Pohlandt-McCormick"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 59,
+        "aRate": 0.56,
+        "withdrawRate": 0.07
+      },
+      "ratings": {
+        "wouldRecommend": 5.5,
+        "deeperUnderstanding": 5.8,
+        "responses": 12
+      }
+    },
+    {
+      "code": "HIST 3469",
+      "title": "History of Women and Family in China, 1550-Present",
+      "credits": "3",
+      "attributes": [
+        "HIS"
+      ],
+      "description": "In this class, we will examine women, gender relations, and family in China from about 1550 to the present. We will read fiction, poetry, memoirs, and works by historians, as well as watch films and examine visual evidence. We will alway…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Blegen Hall 215",
+          "instructors": [
+            "Ann Waltner"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 48,
+        "aRate": 0.8,
+        "withdrawRate": 0.02
+      },
+      "ratings": {
+        "wouldRecommend": 5.6,
+        "deeperUnderstanding": 5.4,
+        "responses": 7
+      }
+    },
+    {
+      "code": "HIST 3511",
+      "title": "Muslims and Jews: Conflict and Co-existence in the Middle East and North Africa since 1700",
+      "credits": "3",
+      "attributes": [
+        "GP",
+        "08",
+        "HIS"
+      ],
+      "description": "Diversity of social/cultural interactions between Muslims and Jews and between Islam and Judaism since 1700. What enabled the two religious communities to peacefully coexist? What were causes of conflict? Why is history of Muslim-Jewish …",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "16:00",
+          "end": "17:15",
+          "location": "Blegen Hall 120",
+          "instructors": [
+            "Noam Sienna"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 71,
+        "aRate": 0.39,
+        "withdrawRate": 0.08
+      },
+      "ratings": {
+        "wouldRecommend": 6,
+        "deeperUnderstanding": 5.9,
+        "responses": 7
+      }
+    },
+    {
+      "code": "HIST 3534",
+      "title": "Introduction to Jewish History and Cultures",
+      "credits": "3",
+      "attributes": [
+        "HIS"
+      ],
+      "description": "This course traces the development of Judaism and Jewish civilizations from their beginnings to the present. With over three millennia as its subject, the course must of necessity be a general survey. Together we will explore the mythic …",
+      "sections": [
+        {
+          "number": "001",
+          "component": "DIS",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "14:30",
+          "end": "15:45",
+          "location": "Hubert H. Humphrey School 25",
+          "instructors": [
+            "Noam Sienna"
+          ]
+        }
+      ],
+      "grades": null,
+      "ratings": null
+    },
+    {
+      "code": "HIST 3547",
+      "title": "The Ottoman Empire",
+      "credits": "3",
+      "attributes": [
+        "GP",
+        "HIS"
+      ],
+      "description": "Survey of Islam's most successful empire, from its founding circa 1300 to its demise in 1923. Lands, institutions, peoples, historical legacy.",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "11:15",
+          "end": "12:30",
+          "location": "Blegen Hall 155",
+          "instructors": [
+            "Zozan Pehlivan"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 283,
+        "aRate": 0.79,
+        "withdrawRate": 0.03
+      },
+      "ratings": {
+        "wouldRecommend": 5.5,
+        "deeperUnderstanding": 5.7,
+        "responses": 70
+      }
+    },
+    {
+      "code": "HIST 3617",
+      "title": "Pagans, Christians, Barbarians: The World of Late Antiquity",
+      "credits": "3",
+      "attributes": [
+        "GP",
+        "HIS"
+      ],
+      "description": "Between classical and medieval, pagan and Christian, Roman and barbarian, the late antique world was a dynamic age. This course will focus on the Mediterranean region from the end of the second to the mid-eighth century. We will examine …",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "11:15",
+          "end": "12:30",
+          "location": "Blegen Hall 110",
+          "instructors": [
+            "Andrea Sterk"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 89,
+        "aRate": 0.61,
+        "withdrawRate": 0.04
+      },
+      "ratings": {
+        "wouldRecommend": 5.5,
+        "deeperUnderstanding": 5.9,
+        "responses": 32
+      }
+    },
+    {
+      "code": "HIST 3813W",
+      "title": "Slavery and the Making of America",
+      "credits": "3",
+      "attributes": [
+        "DSJ",
+        "WI",
+        "HIS"
+      ],
+      "description": "This course examines American racial slavery and its centrality to U.S. history. The course teaches students to consider the experiences of enslaved people, observe how the institution of slavery operated, and understand its far-reaching…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "13:00",
+          "end": "14:15",
+          "location": "Blegen Hall 225",
+          "instructors": [
+            "Joshua Strayhorn"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 75,
+        "aRate": 0.82,
+        "withdrawRate": 0
+      },
+      "ratings": {
+        "wouldRecommend": 5.3,
+        "deeperUnderstanding": 5.6,
+        "responses": 33
+      }
+    },
+    {
+      "code": "HIST 3852",
+      "title": "U.S. Labor and Working-Class History",
+      "credits": "3",
+      "attributes": [
+        "DSJ",
+        "HIS"
+      ],
+      "description": "This course examines the history of labor and working-class people in the United States from the colonial era to the present. We will discuss the various forms of forced labor that were essential to European colonization in the Americas,…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "14:30",
+          "end": "15:45",
+          "location": "Blegen Hall 125",
+          "instructors": [
+            "William Jones"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 110,
+        "aRate": 0.55,
+        "withdrawRate": 0.05
+      },
+      "ratings": {
+        "wouldRecommend": 5.2,
+        "deeperUnderstanding": 5.4,
+        "responses": 38
+      }
+    },
+    {
+      "code": "HIST 3864",
+      "title": "African American History: 1619-1865",
+      "credits": "3",
+      "attributes": [
+        "CIV",
+        "HIS"
+      ],
+      "description": "Importance of dynamics of class, gender, region, and political ideology. Changing nature of race/racism.",
+      "sections": [
+        {
+          "number": "001",
+          "component": "DIS",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": []
+        }
+      ],
+      "grades": {
+        "students": 10,
+        "aRate": 1,
+        "withdrawRate": 0.2
+      },
+      "ratings": null
+    },
+    {
+      "code": "HIST 3871",
+      "title": "American Indian History: Pre-Contact to 1830",
+      "credits": "3",
+      "attributes": [
+        "DSJ",
+        "08",
+        "HIS"
+      ],
+      "description": "Introduction to American Indian history from ancient native America to the removal era. Focuses on the social, cultural, political, and economic diversity of Native American peoples and Native American experiences with European colonialism.",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "13:00",
+          "end": "14:15",
+          "location": "Blegen Hall 255",
+          "instructors": [
+            "David Aiona Chang (he, his, ?oia)"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 118,
+        "aRate": 0.64,
+        "withdrawRate": 0.06
+      },
+      "ratings": {
+        "wouldRecommend": 5.7,
+        "deeperUnderstanding": 5.7,
+        "responses": 32
+      }
+    },
+    {
+      "code": "HIST 3875W",
+      "title": "Comparative Race and Ethnicity in US History",
+      "credits": "3",
+      "attributes": [
+        "DSJ",
+        "WI",
+        "HIS"
+      ],
+      "description": "This writing-intensive course examines the racial history of modern America to learn from and engage with what historians enmeshed in ethnic studies do. These historians examine the systematic and coordinated exercises of power called ra…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Blegen Hall 135",
+          "instructors": [
+            "Yuichiro Onishi"
+          ]
+        }
+      ],
+      "grades": null,
+      "ratings": null
+    },
+    {
+      "code": "HMED 3075",
+      "title": "Technology and Medicine in Modern America",
+      "credits": "3",
+      "attributes": [
+        "HIS",
+        "TS"
+      ],
+      "description": "How technology came to medicine's center-stage. Impact on production of medical knowledge, professionalization, development of institutions/industry, health policy, and gender/race disparities in health care.",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "11:15",
+          "end": "12:05",
+          "location": "Bruininks Hall 530",
+          "instructors": [
+            "Jennifer Gunn"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 605,
+        "aRate": 0.7,
+        "withdrawRate": 0.03
+      },
+      "ratings": {
+        "wouldRecommend": 5.2,
+        "deeperUnderstanding": 5.5,
+        "responses": 143
+      }
+    },
+    {
+      "code": "HSCI 1585",
+      "title": "Mammoths, Minerals, Monoculture: History of Earth and Environmental Science",
+      "credits": "3",
+      "attributes": [
+        "HIS"
+      ],
+      "description": "This course investigates the many ways people across the globe have sought to understand the environment and the earth from antiquity to the present.  We will study the context in which the modern earth and environmental sciences emerged…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed",
+            "Fri"
+          ],
+          "start": "11:15",
+          "end": "12:05",
+          "location": "Amundson Hall 240",
+          "instructors": [
+            "Anna Graber"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 238,
+        "aRate": 0.6,
+        "withdrawRate": 0.01
+      },
+      "ratings": {
+        "wouldRecommend": 5,
+        "deeperUnderstanding": 5.3,
+        "responses": 95
+      }
+    },
+    {
+      "code": "HSCI 1714",
+      "title": "Stone Tools to Steam Engines: Technology and History to 1750",
+      "credits": "3–4",
+      "attributes": [
+        "HIS",
+        "08",
+        "TS"
+      ],
+      "description": "Technology is an enormous force in our society, and has become so important that in many ways it seems to have a life of its own. This course uses historical case studies to demonstrate that technology is not autonomous, but a human acti…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed",
+            "Fri"
+          ],
+          "start": "13:25",
+          "end": "14:15",
+          "location": "Smith Hall 331",
+          "instructors": [
+            "Jennifer Alexander"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 990,
+        "aRate": 0.44,
+        "withdrawRate": 0.04
+      },
+      "ratings": {
+        "wouldRecommend": 5,
+        "deeperUnderstanding": 5.4,
+        "responses": 331
+      }
+    },
+    {
+      "code": "HSCI 1715",
+      "title": "History of Modern Technology: Waterwheels to the Web",
+      "credits": "3–4",
+      "attributes": [
+        "HIS",
+        "08",
+        "TS"
+      ],
+      "description": "This course explores the many technological systems that have come to span our globe, alongside the widespread persistence of traditional technologies. We start with the earliest glimmerings of modernity and industrialization, and move o…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon"
+          ],
+          "start": "18:00",
+          "end": "20:45",
+          "location": "Bruininks Hall 131A",
+          "instructors": [
+            "Mary Thomas"
+          ]
+        },
+        {
+          "number": "002",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Wed"
+          ],
+          "start": "18:00",
+          "end": "20:45",
+          "location": "Bruininks Hall 530",
+          "instructors": [
+            "Mary Thomas"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 1007,
+        "aRate": 0.42,
+        "withdrawRate": 0.05
+      },
+      "ratings": {
+        "wouldRecommend": 4.9,
+        "deeperUnderstanding": 5.3,
+        "responses": 262
+      }
+    },
+    {
+      "code": "HSCI 1814",
+      "title": "How Science Came to Be",
+      "credits": "3–4",
+      "attributes": [
+        "GP",
+        "HIS"
+      ],
+      "description": "Modern culture is a culture of science. Many of our key cognitive and social values are modeled after and subordinated to science. In this course we will examine the emergence of modern science?from antiquity through the end of the seven…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed",
+            "Fri"
+          ],
+          "start": "10:10",
+          "end": "11:00",
+          "location": "Lind Hall 302",
+          "instructors": [
+            "Victor Boantza"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 428,
+        "aRate": 0.53,
+        "withdrawRate": 0.03
+      },
+      "ratings": {
+        "wouldRecommend": 4.8,
+        "deeperUnderstanding": 5.2,
+        "responses": 179
+      }
+    },
+    {
+      "code": "HSCI 3211",
+      "title": "Biology and Culture in the 19th and 20th Centuries",
+      "credits": "3",
+      "attributes": [
+        "CIV",
+        "HIS"
+      ],
+      "description": "Changing conceptions of life and aims and methods of biology; changing relationships between biology and the physical and social sciences; broader intellectual and cultural dimensions of developments in biology.",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "11:15",
+          "end": "12:30",
+          "location": "Amundson Hall 116",
+          "instructors": [
+            "Mark Borrello"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 99,
+        "aRate": 0.65,
+        "withdrawRate": 0.06
+      },
+      "ratings": {
+        "wouldRecommend": 5.3,
+        "deeperUnderstanding": 5.7,
+        "responses": 14
+      }
+    },
+    {
+      "code": "HSCI 3244",
+      "title": "Nature's History: Science, Humans, and the Environment",
+      "credits": "3",
+      "attributes": [
+        "ENV",
+        "08",
+        "HIS"
+      ],
+      "description": "We examine environmental ideas, sustainability, conservation history; critique of the human impact on nature; empire and power in the Anthropocene; how the science of ecology has developed; and modern environmental movements around the g…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Bruininks Hall 412",
+          "instructors": [
+            "Susan Jones"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 556,
+        "aRate": 0.66,
+        "withdrawRate": 0.02
+      },
+      "ratings": {
+        "wouldRecommend": 5.6,
+        "deeperUnderstanding": 5.6,
+        "responses": 227
+      }
+    },
+    {
+      "code": "HSCI 3714",
+      "title": "Stone Tools to Steam Engines: Technology and History to 1750",
+      "credits": "3–4",
+      "attributes": [
+        "HIS",
+        "08",
+        "TS"
+      ],
+      "description": "Technology is an enormous force in our society, and has become so important that in many ways it seems to have a life of its own. This course uses historical case studies to demonstrate that technology is not autonomous, but a human acti…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed",
+            "Fri"
+          ],
+          "start": "13:25",
+          "end": "14:15",
+          "location": "Smith Hall 331",
+          "instructors": [
+            "Jennifer Alexander"
+          ]
+        }
+      ],
+      "grades": null,
+      "ratings": null
+    },
+    {
+      "code": "HSCI 3715",
+      "title": "History of Modern Technology: Waterwheels to the Web",
+      "credits": "3–4",
+      "attributes": [
+        "HIS",
+        "08",
+        "TS"
+      ],
+      "description": "This course explores the many technological systems that have come to span our globe, alongside the widespread persistence of traditional technologies. We start with the earliest glimmerings of modernity and industrialization, and move o…",
+      "sections": [
+        {
+          "number": "002",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Wed"
+          ],
+          "start": "18:00",
+          "end": "20:45",
+          "location": "Bruininks Hall 530",
+          "instructors": [
+            "Mary Thomas"
+          ]
+        },
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon"
+          ],
+          "start": "18:00",
+          "end": "20:45",
+          "location": "Bruininks Hall 131A",
+          "instructors": [
+            "Mary Thomas"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 10,
+        "aRate": 0.56,
+        "withdrawRate": 0.1
+      },
+      "ratings": {
+        "wouldRecommend": 5.1,
+        "deeperUnderstanding": 5.4,
+        "responses": 28
+      }
+    },
+    {
+      "code": "HSCI 3814",
+      "title": "How Science Came to Be",
+      "credits": "3–4",
+      "attributes": [
+        "GP",
+        "HIS"
+      ],
+      "description": "Modern culture is a culture of science. Many of our key cognitive and social values are modeled after and subordinated to science. In this course we will examine the emergence of modern science?from antiquity through the end of the seven…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed",
+            "Fri"
+          ],
+          "start": "10:10",
+          "end": "11:00",
+          "location": "Lind Hall 302",
+          "instructors": [
+            "Victor Boantza"
+          ]
+        }
+      ],
+      "grades": null,
+      "ratings": null
+    },
+    {
+      "code": "HSEM 2541V",
+      "title": "Campus Obscura: A University of Minnesota Cabinet of Curiosity",
+      "credits": "3",
+      "attributes": [
+        "HIS",
+        "HON",
+        "WI"
+      ],
+      "description": "This course examines the history of science, technology, and medicine through physical objects - maps, rare books, artifacts, instruments, specimens, manuscripts and considers how they are used to write history, produce public exhibits, …",
+      "sections": [
+        {
+          "number": "001",
+          "component": "DIS",
+          "mode": "In Person",
+          "days": [
+            "Wed"
+          ],
+          "start": "14:30",
+          "end": "17:00",
+          "location": "Vincent Hall 206",
+          "instructors": [
+            "Juliet Burba",
+            "Emily Beck",
+            "Ellen Holt-Werle"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 28,
+        "aRate": 1,
+        "withdrawRate": 0.04
+      },
+      "ratings": {
+        "wouldRecommend": 5.3,
+        "deeperUnderstanding": 5.5,
+        "responses": 29
+      }
+    },
+    {
+      "code": "JOUR 3007",
+      "title": "The Media in American History and Law: Case Studies",
+      "credits": "3",
+      "attributes": [
+        "HIS"
+      ],
+      "description": "In this class, you'll study news media and their social, cultural, and political impact during a specific historical time period, based on the instructor's expertise and area of research. Examples include: Journalism during the Civil War…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": null,
+          "instructors": []
+        }
+      ],
+      "grades": {
+        "students": 340,
+        "aRate": 0.63,
+        "withdrawRate": 0.02
+      },
+      "ratings": {
+        "wouldRecommend": 5.5,
+        "deeperUnderstanding": 5.7,
+        "responses": 136
+      }
+    },
+    {
+      "code": "JOUR 3614",
+      "title": "History of Media Communication",
+      "credits": "3",
+      "attributes": [
+        "HIS",
+        "TS"
+      ],
+      "description": "In the history of humankind, there have been five major changes in how we communicate and we're in the middle of the latest revolution. This class helps you make sense of these uncharted waters by exploring how humanity adopted, and adap…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Murphy Hall 214",
+          "instructors": [
+            "Sid Bedingfield"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 518,
+        "aRate": 0.64,
+        "withdrawRate": 0.03
+      },
+      "ratings": {
+        "wouldRecommend": 4.8,
+        "deeperUnderstanding": 5.4,
+        "responses": 136
+      }
+    },
+    {
+      "code": "JWST 1034",
+      "title": "Introduction to Jewish History and Cultures",
+      "credits": "3",
+      "attributes": [
+        "HIS"
+      ],
+      "description": "This course traces the development of Judaism and Jewish civilizations from their beginnings to the present. With over three millennia as its subject, the course must of necessity be a general survey. Together we will explore the mythic …",
+      "sections": [
+        {
+          "number": "001",
+          "component": "DIS",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "14:30",
+          "end": "15:45",
+          "location": "Hubert H. Humphrey School 25",
+          "instructors": [
+            "Noam Sienna"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 87,
+        "aRate": 0.31,
+        "withdrawRate": 0.16
+      },
+      "ratings": {
+        "wouldRecommend": 4.4,
+        "deeperUnderstanding": 5.7,
+        "responses": 17
+      }
+    },
+    {
+      "code": "JWST 3034",
+      "title": "Introduction to Jewish History and Cultures",
+      "credits": "3",
+      "attributes": [
+        "HIS"
+      ],
+      "description": "This course traces the development of Judaism and Jewish civilizations from their beginnings to the present. With over three millennia as its subject, the course must of necessity be a general survey. Together we will explore the mythic …",
+      "sections": [
+        {
+          "number": "001",
+          "component": "DIS",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "14:30",
+          "end": "15:45",
+          "location": "Hubert H. Humphrey School 25",
+          "instructors": [
+            "Noam Sienna"
+          ]
+        }
+      ],
+      "grades": null,
+      "ratings": null
+    },
+    {
+      "code": "JWST 3505",
+      "title": "Scripture and the Other: Rethinking the Bible After the Holocaust",
+      "credits": "3",
+      "attributes": [
+        "GP",
+        "HIS"
+      ],
+      "description": "How do the Holocaust and other genocides transform our reading of the Bible? In this interdisciplinary course, we explore how religious ideas shape political philosophy, influence government policies, and legal rulings that enlarge or de…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "14:30",
+          "end": "15:45",
+          "location": "216 Pillsbury Drive 110",
+          "instructors": [
+            "Bernard Levinson"
+          ]
+        }
+      ],
+      "grades": null,
+      "ratings": null
+    },
+    {
+      "code": "JWST 3511",
+      "title": "Muslims and Jews: Conflict and Co-existence in the Middle East and North Africa since 1700",
+      "credits": "3",
+      "attributes": [
+        "GP",
+        "HIS"
+      ],
+      "description": "Diversity of social/cultural interactions between Muslims and Jews and between Islam and Judaism since 1700. What enabled the two religious communities to peacefully coexist? What were causes of conflict? Why is history of Muslim-Jewish …",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "16:00",
+          "end": "17:15",
+          "location": "Blegen Hall 120",
+          "instructors": [
+            "Noam Sienna"
+          ]
+        }
+      ],
+      "grades": null,
+      "ratings": null
+    },
+    {
+      "code": "JWST 3633",
+      "title": "The Holocaust: Memory, Narrative, History",
+      "credits": "3",
+      "attributes": [
+        "GP",
+        "HIS"
+      ],
+      "description": "Decades after the end of the second world war, the Holocaust continues to play a formative role in public discourse about the past in Germany and Austria. As the event itself recedes into the past, our knowledge about the Holocaust has b…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "11:15",
+          "end": "12:30",
+          "location": "Folwell Hall 12",
+          "instructors": [
+            "Leslie Morris"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 30,
+        "aRate": 0.56,
+        "withdrawRate": 0
+      },
+      "ratings": {
+        "wouldRecommend": 5.4,
+        "deeperUnderstanding": 5.6,
+        "responses": 15
+      }
+    },
+    {
+      "code": "LA 3413",
+      "title": "Introduction to Landscape Architectural History",
+      "credits": "3",
+      "attributes": [
+        "GP",
+        "ONLINE",
+        "08",
+        "HIS"
+      ],
+      "description": "Study of  landscape architecture's roots by examining the creation of landscapes over time. Influences of ecological and environmental issues as well as political, economic, and social contexts on the cultural construction of landscape i…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "Completely Online",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": "ONLINE",
+          "instructors": [
+            "Bradley Agee"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 888,
+        "aRate": 0.38,
+        "withdrawRate": 0.06
+      },
+      "ratings": {
+        "wouldRecommend": 4.6,
+        "deeperUnderstanding": 4.9,
+        "responses": 198
+      }
+    },
+    {
+      "code": "LAS 3401W",
+      "title": "Early Latin America to 1825",
+      "credits": "4",
+      "attributes": [
+        "GP",
+        "08",
+        "WI",
+        "HIS"
+      ],
+      "description": "Societies of Americas, Spain, and Portugal before contact. Interactions among Native Americans, African slaves, and Europeans, from colonization through independence. Religion, resistance, labor, gender, race. Primary sources, historical…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Blegen Hall 220",
+          "instructors": [
+            "Sarah Chambers"
+          ]
+        }
+      ],
+      "grades": null,
+      "ratings": null
+    },
+    {
+      "code": "MEST 3617",
+      "title": "Pagans, Christians, Barbarians: The World of Late Antiquity",
+      "credits": "3",
+      "attributes": [
+        "GP",
+        "HIS"
+      ],
+      "description": "Between classical and medieval, pagan and Christian, Roman and barbarian, the late antique world was a dynamic age. This course will focus on the Mediterranean region from the end of the second to the mideighth century. We will examine p…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "11:15",
+          "end": "12:30",
+          "location": "Blegen Hall 110",
+          "instructors": [
+            "Andrea Sterk"
+          ]
+        }
+      ],
+      "grades": null,
+      "ratings": null
+    },
+    {
+      "code": "PHIL 3009",
+      "title": "Existentialism",
+      "credits": "3",
+      "attributes": [
+        "CIV",
+        "HIS"
+      ],
+      "description": "What do we mean when we call something \"existential?\"  What do we mean when we speak of an \"existential\" crisis? We seem to mean that our core beliefs and assumptions are affected and the relationship with our environment is ruptured; we…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "14:30",
+          "end": "15:45",
+          "location": "Blegen Hall 435",
+          "instructors": [
+            "Philip Bold"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 123,
+        "aRate": 0.81,
+        "withdrawRate": 0.06
+      },
+      "ratings": {
+        "wouldRecommend": 5.4,
+        "deeperUnderstanding": 5,
+        "responses": 21
+      }
+    },
+    {
+      "code": "PLPA 2003",
+      "title": "Plague, Famine, and Beer: The Impact of Microscopic Organisms on Human Civilization",
+      "credits": "3",
+      "attributes": [
+        "HIS",
+        "ONLINE"
+      ],
+      "description": "Impacts that microbes have made on course of human civilization. Negative influences of major human/plant infectious disease. Positive benefits attained by harnessing power of microbes. Scale of history includes prehistoric to present da…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "Completely Online",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": "ONLINE",
+          "instructors": [
+            "Brett Arenz"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 1602,
+        "aRate": 0.3,
+        "withdrawRate": 0.06
+      },
+      "ratings": {
+        "wouldRecommend": 5.1,
+        "deeperUnderstanding": 5.4,
+        "responses": 228
+      }
+    },
+    {
+      "code": "POL 1201",
+      "title": "Political Ideas",
+      "credits": "3",
+      "attributes": [
+        "CIV",
+        "ONLINE",
+        "HIS"
+      ],
+      "description": "This course serves as an introduction to the study of political theory. Political theory analyzes the meaning and significance of fundamental concepts in politics. Starting from such basic concerns as the nature of politics, humans, powe…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "16:00",
+          "end": "17:15",
+          "location": "Anderson Hall 250",
+          "instructors": [
+            "Joshua Anderson"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 2346,
+        "aRate": 0.33,
+        "withdrawRate": 0.07
+      },
+      "ratings": {
+        "wouldRecommend": 4.3,
+        "deeperUnderstanding": 5,
+        "responses": 373
+      }
+    },
+    {
+      "code": "POL 3282",
+      "title": "Black Political Thought: Conceptions of Freedom",
+      "credits": "3",
+      "attributes": [
+        "DSJ",
+        "HIS"
+      ],
+      "description": "On January 21, 1964, Ella Baker, one of the most important Black leaders of the Civil Rights Movement stood in front of a large crowd in Hattiesburg, Mississippi and said: \"Even if segregation is gone, we will still need to be free; we w…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "14:30",
+          "end": "15:45",
+          "location": "Blegen Hall 150",
+          "instructors": [
+            "Anuja Bose"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 111,
+        "aRate": 0.54,
+        "withdrawRate": 0.07
+      },
+      "ratings": {
+        "wouldRecommend": 5,
+        "deeperUnderstanding": 5.6,
+        "responses": 23
+      }
+    },
+    {
+      "code": "RELS 1034",
+      "title": "Introduction to Jewish History and Cultures",
+      "credits": "3",
+      "attributes": [
+        "HIS"
+      ],
+      "description": "This course traces the development of Judaism and Jewish civilizations from their beginnings to the present. With over three millennia as its subject, the course must of necessity be a general survey. Together we will explore the mythic …",
+      "sections": [
+        {
+          "number": "001",
+          "component": "DIS",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "14:30",
+          "end": "15:45",
+          "location": "Hubert H. Humphrey School 25",
+          "instructors": [
+            "Noam Sienna"
+          ]
+        }
+      ],
+      "grades": null,
+      "ratings": null
+    },
+    {
+      "code": "RELS 1082",
+      "title": "Jesus in History, Art & Culture",
+      "credits": "3",
+      "attributes": [
+        "HIS"
+      ],
+      "description": "Does time, place, and culture affect our picture of Jesus? We'll start by constructing our own Jesus story and then go backwards in time to examine modern times (film, music, and modern art), pre-Civil War America (views of Jesus from en…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "DIS",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Elliott Hall N119",
+          "instructors": [
+            "Stephen Ahearne-Kroll"
+          ]
+        }
+      ],
+      "grades": null,
+      "ratings": null
+    },
+    {
+      "code": "RELS 3034",
+      "title": "Introduction to Jewish History and Cultures",
+      "credits": "3",
+      "attributes": [
+        "HIS"
+      ],
+      "description": "This course traces the development of Judaism and Jewish civilizations from their beginnings to the present. With over three millennia as its subject, the course must of necessity be a general survey. Together we will explore the mythic …",
+      "sections": [
+        {
+          "number": "001",
+          "component": "DIS",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "14:30",
+          "end": "15:45",
+          "location": "Hubert H. Humphrey School 25",
+          "instructors": [
+            "Noam Sienna"
+          ]
+        }
+      ],
+      "grades": null,
+      "ratings": null
+    },
+    {
+      "code": "RELS 3079",
+      "title": "Muslims and Jews: Conflict and Co-existence in the Middle East and North Africa since 1700",
+      "credits": "3",
+      "attributes": [
+        "GP",
+        "HIS"
+      ],
+      "description": "Diversity of social/cultural interactions between Muslims and Jews and between Islam and Judaism since 1700. What enabled the two religious communities to peacefully coexist? What were causes of conflict? Why is history of Muslim-Jewish …",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "16:00",
+          "end": "17:15",
+          "location": "Blegen Hall 120",
+          "instructors": [
+            "Noam Sienna"
+          ]
+        }
+      ],
+      "grades": null,
+      "ratings": null
+    },
+    {
+      "code": "RELS 3092",
+      "title": "Jesus in History, Art & Culture",
+      "credits": "3",
+      "attributes": [
+        "HIS"
+      ],
+      "description": "Does time, place, and culture affect our picture of Jesus? We'll start by constructing our own Jesus story and then go backwards in time to examine modern times (film, music, and modern art), pre-Civil War America (views of Jesus from en…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "DIS",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Elliott Hall N119",
+          "instructors": [
+            "Stephen Ahearne-Kroll"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 11,
+        "aRate": 1,
+        "withdrawRate": 0
+      },
+      "ratings": {
+        "wouldRecommend": 5.2,
+        "deeperUnderstanding": 5.7,
+        "responses": 13
+      }
+    },
+    {
+      "code": "RELS 3543",
+      "title": "Pagans, Christians, Barbarians: The World of Late Antiquity",
+      "credits": "3",
+      "attributes": [
+        "GP",
+        "HIS"
+      ],
+      "description": "Between classical and medieval, pagan and Christian, Roman and barbarian, the late antique world was a dynamic age. This course will focus on the Mediterranean region from the end of the second to the mideighth century. We will examine p…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "11:15",
+          "end": "12:30",
+          "location": "Blegen Hall 110",
+          "instructors": [
+            "Andrea Sterk"
+          ]
+        }
+      ],
+      "grades": null,
+      "ratings": null
+    },
+    {
+      "code": "RELS 3627",
+      "title": "The End of the World in Literature and History",
+      "credits": "3",
+      "attributes": [
+        "HIS"
+      ],
+      "description": "For at least two and a half millennia, prophets, politicians, and poets have crafted terrifying accounts about the end of the world. This comparatist seminar examines the way different cultures have imagined a final apocalypse with parti…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "DIS",
+          "mode": "Completely Online",
+          "days": [],
+          "start": null,
+          "end": null,
+          "location": "ONLINE",
+          "instructors": [
+            "Jennifer Jodell"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 49,
+        "aRate": 0.74,
+        "withdrawRate": 0.06
+      },
+      "ratings": {
+        "wouldRecommend": 5.5,
+        "deeperUnderstanding": 5.5,
+        "responses": 17
+      }
+    },
+    {
+      "code": "RELS 3722",
+      "title": "The Ottoman Empire",
+      "credits": "3",
+      "attributes": [
+        "GP",
+        "HIS"
+      ],
+      "description": "Survey of Islam's most successful empire, from its founding circa 1300 to its demise in 1923. Lands, institutions, peoples, historical legacy.",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Mon",
+            "Wed"
+          ],
+          "start": "11:15",
+          "end": "12:30",
+          "location": "Blegen Hall 155",
+          "instructors": [
+            "Zozan Pehlivan"
+          ]
+        }
+      ],
+      "grades": null,
+      "ratings": null
+    },
+    {
+      "code": "SPAN 3506",
+      "title": "Traditional ways of knowing & the environment",
+      "credits": "3",
+      "attributes": [
+        "HIS",
+        "ONLINE"
+      ],
+      "description": "In this class, we will explore how competing systems of knowledge about the world and man?s place in it existed in the medieval Iberian world. We will explore how scholars from Mesoamerica and Muslim Spain viewed the natural world and ho…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "09:45",
+          "end": "11:00",
+          "location": "Akerman Hall 227",
+          "instructors": [
+            "Michelle Hamilton"
+          ]
+        }
+      ],
+      "grades": null,
+      "ratings": null
+    },
+    {
+      "code": "TH 3152W",
+      "title": "Art Under Authoritarianism: Theatre and Music in the Global South",
+      "credits": "3",
+      "attributes": [
+        "HIS",
+        "WI"
+      ],
+      "description": "What does it mean to be an artist in the Global South? This is a question that has been asked in different ways in twentieth century decolonization movements and the transnational media cultures of the twenty-first century. In Latin Amer…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "13:25",
+          "end": "15:20",
+          "location": "Hubert H. Humphrey School 30",
+          "instructors": [
+            "Sonali Pahwa",
+            "Katie Willer"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 102,
+        "aRate": 0.57,
+        "withdrawRate": 0.06
+      },
+      "ratings": {
+        "wouldRecommend": 5.6,
+        "deeperUnderstanding": 5.9,
+        "responses": 14
+      }
+    },
+    {
+      "code": "YOST 3001",
+      "title": "Introduction to History & Philosophy of Youthwork",
+      "credits": "4",
+      "attributes": [
+        "DSJ",
+        "HIS"
+      ],
+      "description": "This course exposes students to a depth of perspectives on young people and youth work. Exploring various historic and philosophical origins of ?normal? childhood, we unveil the way our modern understandings of child, youth, and adolesce…",
+      "sections": [
+        {
+          "number": "001",
+          "component": "LEC",
+          "mode": "In Person",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "start": "10:40",
+          "end": "12:35",
+          "location": "Peters Hall 5",
+          "instructors": [
+            "John Gwinn"
+          ]
+        }
+      ],
+      "grades": {
+        "students": 305,
+        "aRate": 0.74,
+        "withdrawRate": 0.01
+      },
+      "ratings": {
+        "wouldRecommend": 5.5,
+        "deeperUnderstanding": 5.5,
+        "responses": 64
+      }
+    }
+  ]
+}
