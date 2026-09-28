@@ -13,13 +13,21 @@ export type { AssistantProfile, AssistantRequest, AssistantTurn } from "./goldy"
 
 /** Snapshot of the student's data so answers stay grounded in what the app shows. */
 async function studentContext(): Promise<string> {
-  const [balance, assignments, courses, events] = await Promise.all([
+  const [balance, assignments, courses, requirements, events] = await Promise.all([
     paymentsService.getBalance(),
     academicsService.getAssignments(),
     academicsService.getCourses(),
+    academicsService.getRequirements(),
     clubsService.getEvents(),
   ]);
-  return JSON.stringify({ today: new Date().toISOString(), balance, assignments, courses, events });
+  return JSON.stringify({
+    today: new Date().toISOString(),
+    balance,
+    assignments,
+    courses,
+    requirements,
+    events,
+  });
 }
 
 export const askAssistant = createServerFn({ method: "POST" })

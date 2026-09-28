@@ -1,7 +1,7 @@
 import { academicsService } from "./academicsService";
 import { clubsService } from "./clubsService";
 import { paymentsService } from "./paymentsService";
-import { formatCurrency, formatDate, relativeDue } from "@/utils/helpers";
+import { formatCurrency, formatDate, relativeDue, sum } from "@/utils/helpers";
 import type { ClubEvent } from "@/types";
 import type { DashboardResponse, Widget, WidgetIcon } from "@/types/sdui";
 
@@ -57,6 +57,10 @@ export const dashboardService = {
         .map((i) => i.dueDate)
         .sort()
         .at(0);
+      const pastDue = nextDue !== undefined && new Date(nextDue).getTime() < Date.now();
+      const lateFee = sum(
+        balance.items.filter((i) => /late/i.test(i.description)).map((i) => i.amount),
+      );
       widgets.push({
         id: "w-balance",
         type: "action",
@@ -64,11 +68,15 @@ export const dashboardService = {
         size: "featured",
         priority: 1,
         data: {
-          eyebrow: "Balance due",
+          eyebrow: pastDue
+            ? `Past due${lateFee > 0 ? ` · ${formatCurrency(lateFee)} late fee added` : ""}`
+            : "Balance due",
           title: `${formatCurrency(balance.balanceDue)} for fall semester`,
-          detail: nextDue
-            ? `Tuition & fees · ${relativeDue(nextDue).toLowerCase()}`
-            : "Tuition & fees",
+          detail: !nextDue
+            ? "Tuition & fees"
+            : pastDue
+              ? `Was due ${formatDate(nextDue)} · a hold can block spring registration`
+              : `Tuition & fees · ${relativeDue(nextDue).toLowerCase()}`,
           icon: "payment",
           tone: "urgent",
         },
@@ -124,7 +132,7 @@ export const dashboardService = {
       sections: [
         { id: "quickActions", title: "Quick actions", priority: 1 },
         { id: "actions", title: "Action items", priority: 2 },
-        { id: "forYou", title: "For you", priority: 3 },
+        { id: "forYou", title: "Happening on campus", priority: 3 },
       ],
       widgets,
       metadata: {

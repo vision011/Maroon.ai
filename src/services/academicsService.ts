@@ -1,37 +1,48 @@
 import { mockRequest } from "./api";
 import { getCanvasAssignments, getCanvasCourses } from "./canvas.functions";
+import { DEMO_MODE, demoDate } from "./demo";
 import type { AcademicItem, Course } from "@/types";
 
 const ASSIGNMENTS: AcademicItem[] = [
   {
     id: "a1",
     courseCode: "CSCI 4061",
-    title: "Project 2: Shell Implementation",
-    dueDate: daysFromNow(2),
+    title: "Project 1: Multi-process Mapper",
+    dueDate: demoDate(1, 23, 59),
     location: "Canvas submission",
     type: "assignment",
   },
   {
     id: "a2",
-    courseCode: "MATH 2374",
-    title: "Midterm Exam 2",
-    dueDate: daysFromNow(5),
-    location: "Tate Hall 101",
-    type: "exam",
+    courseCode: "CSCI 4041",
+    title: "Homework 2: Asymptotic Analysis",
+    dueDate: demoDate(3, 23, 59),
+    location: "Gradescope",
+    type: "assignment",
   },
   {
     id: "a3",
-    courseCode: "CSCI 4041",
-    title: "Homework 6: Graph Algorithms",
-    dueDate: daysFromNow(1),
-    location: "Gradescope",
-    type: "assignment",
+    courseCode: "STAT 3021",
+    title: "Quiz 3: Conditional Probability",
+    dueDate: demoDate(4, 11, 15),
+    location: "Canvas quiz",
+    type: "quiz",
   },
 ];
 
 const COURSES: Course[] = [
   {
     id: "c1",
+    code: "CSCI 4041",
+    title: "Algorithms and Data Structures",
+    instructor: "Prof. Daniel Kluver",
+    credits: 4,
+    meetingTime: "MWF 09:05–09:55",
+    location: "Amundson Hall B75",
+    grade: "A",
+  },
+  {
+    id: "c2",
     code: "CSCI 4061",
     title: "Introduction to Operating Systems",
     instructor: "Prof. Jon Weissman",
@@ -41,35 +52,50 @@ const COURSES: Course[] = [
     grade: "A-",
   },
   {
-    id: "c2",
-    code: "MATH 2374",
-    title: "Multivariable Calculus & Vector Analysis",
-    instructor: "Prof. Anne Kelley",
-    credits: 4,
-    meetingTime: "TuTh 13:00–14:15",
-    location: "Vincent Hall 16",
+    id: "c3",
+    code: "CSCI 4131",
+    title: "Internet Programming",
+    instructor: "Prof. Dan Challou",
+    credits: 3,
+    meetingTime: "TuTh 14:30–15:45",
+    location: "Keller Hall 3-125",
     grade: "B+",
   },
   {
-    id: "c3",
-    code: "CSCI 4041",
-    title: "Algorithms and Data Structures",
-    instructor: "Prof. Daniel Kluver",
-    credits: 4,
-    meetingTime: "MWF 12:20–13:10",
-    location: "Amundson Hall B75",
-    grade: "A",
+    id: "c4",
+    code: "STAT 3021",
+    title: "Introduction to Probability and Statistics",
+    instructor: "Prof. Galin Jones",
+    credits: 3,
+    meetingTime: "TuTh 11:15–12:30",
+    location: "Vincent Hall 16",
+    grade: "A-",
   },
 ];
 
-function daysFromNow(days: number): string {
-  return new Date(Date.now() + days * 86_400_000).toISOString();
-}
+/** Liberal Education requirements still open on the student's degree audit (APAS). */
+const REQUIREMENTS = {
+  program: "B.S. Computer Science, College of Science and Engineering",
+  year: "Junior",
+  liberalEducationRemaining: ["Historical Perspectives (HIS)"],
+  liberalEducationDone: [
+    "Arts/Humanities",
+    "Biological Sciences",
+    "Literature",
+    "Mathematical Thinking",
+    "Physical Sciences",
+    "Social Sciences",
+    "Writing Intensive (WI) x2 of 4",
+  ],
+};
 
-/** Live Canvas data when CANVAS_API_TOKEN is set on the server; mock data otherwise. */
+/** Live Canvas data when CANVAS_API_TOKEN is set on the server (and demo mode is off). */
 export const academicsService = {
   getAssignments: async (): Promise<AcademicItem[]> =>
-    (await getCanvasAssignments()) ?? mockRequest("/academics/assignments", ASSIGNMENTS),
+    (DEMO_MODE ? null : await getCanvasAssignments()) ??
+    mockRequest("/academics/assignments", ASSIGNMENTS),
   getCourses: async (): Promise<Course[]> =>
-    (await getCanvasCourses()) ?? mockRequest("/academics/courses", COURSES),
+    (DEMO_MODE ? null : await getCanvasCourses()) ?? mockRequest("/academics/courses", COURSES),
+  getRequirements: (): Promise<typeof REQUIREMENTS> =>
+    mockRequest("/academics/requirements", REQUIREMENTS),
 };
