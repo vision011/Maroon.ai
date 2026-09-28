@@ -1,0 +1,149 @@
+{
+  "term": "Fall 2026",
+  "source": "https://onestop.umn.edu/calendar/academic-calendar?terms=Fall%202026 (saved 2026-09-28)",
+  "note": "Undergraduate-relevant dates only; monthly graduate graduation deadlines and spring pre-registration dates are left out.",
+  "events": [
+    { "date": "2026-09-07", "event": "University closed (Labor Day)", "category": "closed" },
+    {
+      "date": "2026-09-08",
+      "event": "Fall full semester and first 7-week session start",
+      "category": "term"
+    },
+    {
+      "date": "2026-09-08",
+      "event": "$50 late fee for initial registration during the first 14 days of the semester",
+      "category": "billing"
+    },
+    {
+      "date": "2026-09-11",
+      "event": "First billing statement available (due 2026-09-24)",
+      "category": "billing"
+    },
+    { "date": "2026-09-11", "event": "Payment plan open for enrollment", "category": "billing" },
+    {
+      "date": "2026-09-14",
+      "event": "Last day for a 100% tuition refund when dropping full-semester classes",
+      "category": "refund"
+    },
+    {
+      "date": "2026-09-14",
+      "event": "Last day to add full-semester classes without instructor approval",
+      "category": "register"
+    },
+    {
+      "date": "2026-09-21",
+      "event": "Last day for a 75% tuition refund when dropping full-semester classes",
+      "category": "refund"
+    },
+    {
+      "date": "2026-09-21",
+      "event": "Last day to add full-semester classes without college approval",
+      "category": "register"
+    },
+    {
+      "date": "2026-09-21",
+      "event": "Last day to drop full-semester classes without a W on the transcript",
+      "category": "drop"
+    },
+    {
+      "date": "2026-09-21",
+      "event": "Last day to change grade basis (A-F or S/N) or variable credits for full-semester classes",
+      "category": "grading"
+    },
+    {
+      "date": "2026-09-21",
+      "event": "Last day to opt out of Course Works fees for a refund",
+      "category": "refund"
+    },
+    {
+      "date": "2026-09-22",
+      "event": "$100 late fee for initial registration after the first 14 days",
+      "category": "billing"
+    },
+    {
+      "date": "2026-09-22",
+      "event": "Last day to apply for fall undergraduate graduation",
+      "category": "graduation"
+    },
+    {
+      "date": "2026-09-24",
+      "event": "Fall payment due in full (or first payment on the payment plan)",
+      "category": "payment-due"
+    },
+    {
+      "date": "2026-09-28",
+      "event": "Last day for a 50% tuition refund when dropping full-semester classes",
+      "category": "refund"
+    },
+    {
+      "date": "2026-10-05",
+      "event": "Last day for a 25% tuition refund when dropping full-semester classes",
+      "category": "refund"
+    },
+    {
+      "date": "2026-10-05",
+      "event": "Last day to drop first 7-week session classes without college approval (W recorded)",
+      "category": "drop"
+    },
+    {
+      "date": "2026-10-11",
+      "event": "Second billing statement available (due 2026-10-24)",
+      "category": "billing"
+    },
+    {
+      "date": "2026-10-24",
+      "event": "Fall payment due in full (or second payment on the payment plan)",
+      "category": "payment-due"
+    },
+    { "date": "2026-10-27", "event": "Second 7-week session starts", "category": "term" },
+    {
+      "date": "2026-11-09",
+      "event": "Last day to drop second 7-week session classes without a W",
+      "category": "drop"
+    },
+    {
+      "date": "2026-11-10",
+      "event": "Spring semester registration begins for degree-seeking students",
+      "category": "register"
+    },
+    {
+      "date": "2026-11-11",
+      "event": "Third billing statement available (due 2026-11-24)",
+      "category": "billing"
+    },
+    {
+      "date": "2026-11-16",
+      "event": "Last day to drop full-semester classes without college approval (W recorded)",
+      "category": "drop"
+    },
+    {
+      "date": "2026-11-24",
+      "event": "Fall payment due in full (or third payment on the payment plan)",
+      "category": "payment-due"
+    },
+    { "date": "2026-11-26", "event": "University closed (Thanksgiving)", "category": "closed" },
+    { "date": "2026-11-27", "event": "University closed", "category": "closed" },
+    {
+      "date": "2026-12-11",
+      "event": "Fourth billing statement available, new charges and past-due balances only (due 2026-12-24)",
+      "category": "billing"
+    },
+    { "date": "2026-12-16", "event": "Last day of instruction", "category": "term" },
+    {
+      "date": "2026-12-17",
+      "event": "Final exams begin (Dec 17-19 and Dec 21-23; Dec 20 is a study day)",
+      "category": "finals"
+    },
+    { "date": "2026-12-23", "event": "End of fall semester", "category": "term" },
+    {
+      "date": "2026-12-24",
+      "event": "Fall payment due for new charges or past-due balances",
+      "category": "payment-due"
+    },
+    {
+      "date": "2027-01-14",
+      "event": "Fall payment due for new charges or past-due balances (fifth statement)",
+      "category": "payment-due"
+    }
+  ]
+}

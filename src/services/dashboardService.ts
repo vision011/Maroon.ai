@@ -5,6 +5,9 @@ import { formatCurrency, formatDate, relativeDue } from "@/utils/helpers";
 import type { ClubEvent } from "@/types";
 import type { DashboardResponse, Widget, WidgetIcon } from "@/types/sdui";
 
+/** The dashboard only surfaces the most important action items; the rest live in Courses. */
+const MAX_ACTION_ITEMS = 3;
+
 const EVENT_ICON: Record<ClubEvent["type"], WidgetIcon> = {
   meeting: "event",
   social: "event",
@@ -72,8 +75,11 @@ export const dashboardService = {
       });
     }
 
+    const actionSlotsLeft =
+      MAX_ACTION_ITEMS - widgets.filter((w) => w.section === "actions").length;
     [...assignments]
       .sort((a, b) => a.dueDate.localeCompare(b.dueDate))
+      .slice(0, Math.max(0, actionSlotsLeft))
       .forEach((item, index) => {
         widgets.push({
           id: `w-${item.id}`,
