@@ -46,7 +46,7 @@ export function DashboardProvider({ children }: { children: ReactNode }) {
       setError(null);
       try {
         const data = await dashboardService.getWidgets(
-          student.studentId,
+          student.id,
           student.name.split(" ")[0] ?? student.name,
         );
         setResponse(data);
@@ -68,7 +68,7 @@ export function DashboardProvider({ children }: { children: ReactNode }) {
       setLoading(false);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isAuthenticated, student?.studentId]);
+  }, [isAuthenticated, student?.id]);
 
   const value = useMemo<DashboardContextValue>(
     () => ({
