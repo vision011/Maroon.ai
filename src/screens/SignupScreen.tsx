@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { MailCheck } from "lucide-react";
 import {
   AuthShell,
   FormError,
@@ -17,39 +16,19 @@ export function SignupScreen() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
-  /** Set when Supabase needs the student to confirm their email first. */
-  const [confirmEmail, setConfirmEmail] = useState<string | null>(null);
 
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
     setError(null);
     setBusy(true);
     try {
-      const result = await signUp({ fullName, internetId, password });
       // Signed in: RootNavigator moves the student on to onboarding.
-      if (result.status === "confirm-email") setConfirmEmail(result.email);
+      await signUp({ fullName, internetId, password });
     } catch (err) {
       setError(err instanceof Error ? err.message : "Could not create your account.");
     } finally {
       setBusy(false);
     }
-  }
-
-  if (confirmEmail) {
-    return (
-      <AuthShell title="Check your inbox" intro="One more step before you can sign in.">
-        <div className="flex items-start gap-3">
-          <MailCheck className="mt-0.5 size-6 shrink-0 text-primary" />
-          <p className="text-sm">
-            We sent a confirmation link to <span className="font-semibold">{confirmEmail}</span>.
-            Open it on this device to finish setting up your account.
-          </p>
-        </div>
-        <Link to="/login" className={`mt-6 block text-center ${PRIMARY_BUTTON}`}>
-          Back to sign in
-        </Link>
-      </AuthShell>
-    );
   }
 
   return (

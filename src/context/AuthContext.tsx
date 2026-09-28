@@ -1,22 +1,8 @@
-import { createContext, useCallback, useEffect, useMemo, useState, type ReactNode } from "react";
-import { authService, type SignUpResult } from "@/services/authService";
+import { useCallback, useEffect, useMemo, useState, type ReactNode } from "react";
+import { authService } from "@/services/authService";
 import { profileService } from "@/services/profileService";
-import type { AuthSession, ProfileUpdate, SignUpDetails, Student } from "@/types";
-
-export interface AuthContextValue {
-  student: Student | null;
-  token: string | null;
-  isAuthenticated: boolean;
-  isReady: boolean;
-  /** Signed in but hasn't finished onboarding yet. */
-  needsOnboarding: boolean;
-  login: (internetId: string, password: string) => Promise<void>;
-  signUp: (details: SignUpDetails) => Promise<SignUpResult>;
-  updateProfile: (update: ProfileUpdate) => Promise<void>;
-  logout: () => void;
-}
-
-export const AuthContext = createContext<AuthContextValue | null>(null);
+import type { AuthSession, ProfileUpdate, SignUpDetails } from "@/types";
+import { AuthContext, type AuthContextValue } from "./authContextValue";
 
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [session, setSession] = useState<AuthSession | null>(null);
@@ -50,9 +36,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const signUp = useCallback(async (details: SignUpDetails) => {
-    const result = await authService.signUp(details);
-    if (result.status === "signed-in") setSession(result.session);
-    return result;
+    setSession(await authService.signUp(details));
   }, []);
 
   const studentId = session?.student.id;

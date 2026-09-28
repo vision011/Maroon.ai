@@ -9,11 +9,6 @@ import type { AuthSession, SignUpDetails } from "@/types";
  * signed in when that profile row exists.
  */
 
-export type SignUpResult =
-  | { status: "signed-in"; session: AuthSession }
-  /** Email confirmation is on: the student must open the link before signing in. */
-  | { status: "confirm-email"; email: string };
-
 const NO_ACCOUNT = "No account with that Internet ID. Create one first.";
 
 /** Accepts "moha2048" or "moha2048@umn.edu". */
@@ -31,8 +26,6 @@ function friendlyError(error: AuthError): Error {
       return new Error(
         "That Internet ID and password don't match. New here? Create an account first.",
       );
-    case "email_not_confirmed":
-      return new Error("Confirm your email first. Check your UMN inbox for the link.");
     case "user_already_exists":
       return new Error("An account with that Internet ID already exists. Sign in instead.");
     case "weak_password":
@@ -88,7 +81,11 @@ export const authService = {
     return session;
   },
 
-  async signUp(details: SignUpDetails): Promise<SignUpResult> {
+  /**
+   * Signs the student straight in. Needs "Confirm email" turned off in Supabase
+   * (Authentication → Sign In / Providers → Email), so no confirmation mail is sent.
+   */
+  async signUp(details: SignUpDetails): Promise<AuthSession> {
     const internetId = normalizeInternetId(details.internetId);
     const fullName = details.fullName.trim();
     if (!fullName) throw new Error("Enter your full name.");
@@ -98,22 +95,19 @@ export const authService = {
     if (details.password.length < 8)
       throw new Error("Use at least 8 characters for your password.");
 
-    const email = `${internetId}@umn.edu`;
     const { data, error } = await requireSupabase().auth.signUp({
-      email,
+      email: `${internetId}@umn.edu`,
       password: details.password,
-      options: {
-        // Read by the handle_new_user trigger to fill in the profile.
-        data: { full_name: fullName },
-        emailRedirectTo: `${window.location.origin}/onboarding`,
-      },
+      // Read by the handle_new_user trigger to fill in the profile.
+      options: { data: { full_name: fullName } },
     });
     if (error) throw friendlyError(error);
-    if (!data.session) return { status: "confirm-email", email };
+    if (!data.session)
+      throw new Error("Account created, but we couldn't sign you in. Sign in now.");
 
     const session = await withProfile(data.session);
     if (!session) throw new Error("Couldn't create your profile. Try again.");
-    return { status: "signed-in", session };
+    return session;
   },
 
   async signOut(): Promise<void> {
