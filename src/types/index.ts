@@ -1,5 +1,5 @@
 /** Onboarding screens, in order. Stored on the profile so students can resume. */
-export type OnboardingStep = "welcome" | "about" | "done";
+export type OnboardingStep = "welcome" | "language" | "about" | "done";
 
 export interface Student {
   /** Supabase Auth user id; owns the student's data. */
@@ -12,6 +12,12 @@ export interface Student {
   studentId?: string;
   program?: string;
   graduationYear?: number;
+  /** ISO 639 code Goldy answers in, e.g. "es". Defaults to "en". */
+  preferredLanguage: string;
+  /** Short sentences at about a grade-6 reading level. */
+  plainLanguage: boolean;
+  /** Unset until the student answers. */
+  transferStudent?: boolean;
   onboardingStep?: OnboardingStep;
   /** Unset until the student finishes onboarding. */
   onboardedAt?: string;
@@ -19,8 +25,18 @@ export interface Student {
 
 /** Profile fields the student can change after sign-up. `undefined` clears a field. */
 export type ProfileUpdate = {
-  [K in "name" | "studentId" | "program" | "graduationYear" | "onboardingStep" | "onboardedAt"]?:
-    Student[K] | undefined;
+  [
+    K in
+      | "name"
+      | "studentId"
+      | "program"
+      | "graduationYear"
+      | "preferredLanguage"
+      | "plainLanguage"
+      | "transferStudent"
+      | "onboardingStep"
+      | "onboardedAt"
+  ]?: Student[K] | undefined;
 };
 
 export interface SignUpDetails {
