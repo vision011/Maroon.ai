@@ -19,8 +19,8 @@ const STOPS = [
   },
   {
     target: "forYou",
-    title: "Picked for you",
-    body: "Club events and opportunities. Swipe sideways to see more.",
+    title: "Happening on campus",
+    body: "Club events and opportunities coming up this week. Tap one to RSVP.",
   },
   {
     target: "goldy",

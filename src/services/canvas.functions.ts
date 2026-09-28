@@ -31,10 +31,13 @@ interface CanvasPlannerItem {
   submissions?: { submitted?: boolean } | false;
 }
 
-async function canvasGet<T>(path: string): Promise<T | null> {
-  const baseUrl = process.env["CANVAS_BASE_URL"];
-  const token = process.env["CANVAS_API_TOKEN"];
-  if (!baseUrl || !token) return null;
+const DEFAULT_BASE_URL = "https://canvas.umn.edu";
+
+/** Uses the student's own token when given, else the server's CANVAS_API_TOKEN. */
+async function canvasGet<T>(path: string, studentToken?: string | null): Promise<T | null> {
+  const baseUrl = process.env["CANVAS_BASE_URL"] || DEFAULT_BASE_URL;
+  const token = studentToken || process.env["CANVAS_API_TOKEN"];
+  if (!token) return null;
   try {
     const res = await fetch(`${baseUrl}/api/v1${path}`, {
       headers: { Authorization: `Bearer ${token}` },
@@ -49,6 +52,10 @@ async function canvasGet<T>(path: string): Promise<T | null> {
     return null;
   }
 }
+
+/** POST so the student's token travels in the request body, never in a URL or server log. */
+const tokenInput = (token: string | null | undefined) =>
+  typeof token === "string" && token.trim() ? token.trim() : null;
 
 /** "CSCI 4821 (001)" → "CSCI 4821" */
 function shortCode(courseCode: string): string {
@@ -72,10 +79,20 @@ function itemType(item: CanvasPlannerItem): AcademicItem["type"] {
   return "assignment";
 }
 
-export const getCanvasCourses = createServerFn({ method: "GET" }).handler(
-  async (): Promise<Course[] | null> => {
+export const verifyCanvasToken = createServerFn({ method: "POST" })
+  .inputValidator(tokenInput)
+  .handler(async ({ data: token }): Promise<{ name: string } | null> => {
+    if (!token) return null;
+    const user = await canvasGet<{ name: string }>("/users/self", token);
+    return user ? { name: user.name } : null;
+  });
+
+export const getCanvasCourses = createServerFn({ method: "POST" })
+  .inputValidator(tokenInput)
+  .handler(async ({ data: token }): Promise<Course[] | null> => {
     const courses = await canvasGet<CanvasCourse[]>(
       "/courses?enrollment_state=active&per_page=100&include[]=term&include[]=teachers&include[]=total_scores",
+      token,
     );
     if (!courses) return null;
 
@@ -98,15 +115,16 @@ export const getCanvasCourses = createServerFn({ method: "GET" }).handler(
         return course;
       })
       .sort((a, b) => a.code.localeCompare(b.code));
-  },
-);
+  });
 
-export const getCanvasAssignments = createServerFn({ method: "GET" }).handler(
-  async (): Promise<AcademicItem[] | null> => {
+export const getCanvasAssignments = createServerFn({ method: "POST" })
+  .inputValidator(tokenInput)
+  .handler(async ({ data: token }): Promise<AcademicItem[] | null> => {
     const start = new Date();
     const end = new Date(start.getTime() + UPCOMING_DAYS * 86_400_000);
     const items = await canvasGet<CanvasPlannerItem[]>(
       `/planner/items?start_date=${start.toISOString()}&end_date=${end.toISOString()}&per_page=100`,
+      token,
     );
     if (!items) return null;
 
@@ -121,5 +139,4 @@ export const getCanvasAssignments = createServerFn({ method: "GET" }).handler(
         location: "Canvas",
         type: itemType(i),
       }));
-  },
-);
+  });

@@ -4,6 +4,7 @@ import {
   CalendarDays,
   ClipboardCheck,
   CreditCard,
+  Link2,
   User,
   Users,
   Wrench,
@@ -20,6 +21,7 @@ export const ICONS = {
   courses: BookOpen,
   clubs: Users,
   account: User,
+  link: Link2,
 } as const;
 
 const ICON_TONE: Record<WidgetTone, string> = {

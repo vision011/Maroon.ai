@@ -1,13 +1,26 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "@tanstack/react-router";
 import { BackLink } from "@/components/Common/BackLink";
 import { FormError } from "@/components/Auth/AuthShell";
 import { useAuth } from "@/hooks/useAuth";
+import { useDashboard } from "@/hooks/useDashboard";
+import { canvasService } from "@/services/canvasService";
 
 export function AccountScreen() {
   const { student, logout, updateProfile } = useAuth();
   const navigate = useNavigate();
+  const { refresh } = useDashboard();
   const [error, setError] = useState<string | null>(null);
+  const [canvasConnected, setCanvasConnected] = useState(false);
+
+  // The token lives in this browser, so check after mount rather than during server render.
+  useEffect(() => setCanvasConnected(canvasService.token() !== null), []);
+
+  function disconnectCanvas() {
+    canvasService.disconnect();
+    setCanvasConnected(false);
+    void refresh(true);
+  }
 
   /** Clears the tour flag so the dashboard shows the tour again. */
   async function replayTour() {
@@ -53,6 +66,16 @@ export function AccountScreen() {
           Replay the dashboard tour
         </button>
         <FormError message={error} />
+
+        {canvasConnected ? (
+          <button
+            type="button"
+            onClick={disconnectCanvas}
+            className="tap-highlight-none w-full rounded-lg border border-input py-3 text-sm font-semibold"
+          >
+            Disconnect Canvas
+          </button>
+        ) : null}
 
         <button
           type="button"

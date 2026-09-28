@@ -12,9 +12,34 @@ const MODEL = "claude-opus-5";
 /** Course search can take a round or two; stop runaway loops well before that matters. */
 const MAX_TOOL_ROUNDS = 4;
 
+/** A file the student attached to a question, base64-encoded. */
+export interface ChatAttachment {
+  name: string;
+  /** "application/pdf" or an image type such as "image/png". */
+  mediaType: string;
+  data: string;
+}
+
 export interface AssistantTurn {
   role: "user" | "assistant";
   text: string;
+  attachment?: ChatAttachment;
+}
+
+const IMAGE_TYPES = ["image/png", "image/jpeg", "image/gif", "image/webp"] as const;
+
+function turnContent(turn: AssistantTurn): Anthropic.Beta.BetaMessageParam["content"] {
+  const file = turn.attachment;
+  if (!file) return turn.text;
+  const image = IMAGE_TYPES.find((t) => t === file.mediaType);
+  const block: Anthropic.Beta.BetaContentBlockParam = image
+    ? { type: "image", source: { type: "base64", media_type: image, data: file.data } }
+    : {
+        type: "document",
+        title: file.name,
+        source: { type: "base64", media_type: "application/pdf", data: file.data },
+      };
+  return [block, { type: "text", text: turn.text }];
 }
 
 /** The student's own settings from their profile, used to shape Goldy's replies. */
@@ -29,6 +54,8 @@ export interface AssistantProfile {
 export interface AssistantRequest {
   turns: AssistantTurn[];
   profile: AssistantProfile;
+  /** The student's own Canvas token, if they connected Canvas. */
+  canvasToken?: string | null;
 }
 
 function styleRules(profile: AssistantProfile): string {
@@ -77,6 +104,7 @@ export async function runGoldy({
     styleRules(profile),
     "Use the student's data and the UMN facts below. If something isn't there, say so and point to MyU or One Stop instead of guessing.",
     "For course advice, call search_courses. Describe courses with evidence (share of A grades, would-recommend score, when it meets) and never promise a class is easy. Grade stats come from past semesters. Pick sections that don't clash with the student's current class times, and say the times come from the UMN class schedule (courses.umn.edu) and the grades from umn.lol. Recommend at most two courses, check for time clashes before you write (never correct yourself mid-answer), and skip honors-only courses (numbers ending in H or V) unless the student is in the Honors Program. The catalog is this fall's; for a later term, say these ran this fall and to confirm times in that term's schedule.",
+    "If the student attaches a document or image, read it and answer from it; when it disagrees with the student data, point out the difference.",
     "When explaining a bill, go through it line by line: what each charge is, which credits (grants, aid) already lowered it, what is still owed and why any late fee was added.",
     "When dropping or switching a class comes up, give the deadline and refund that apply today from the calendar. When money comes up, give the next due date, and mention the late fee and payment plan only if relevant.",
     UMN_FACTS,
@@ -86,7 +114,7 @@ export async function runGoldy({
 
   const messages: Anthropic.Beta.BetaMessageParam[] = turns.map((t) => ({
     role: t.role,
-    content: t.text,
+    content: turnContent(t),
   }));
 
   try {

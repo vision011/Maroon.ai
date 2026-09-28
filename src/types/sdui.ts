@@ -12,7 +12,8 @@ export type WidgetIcon =
   | "career"
   | "courses"
   | "clubs"
-  | "account";
+  | "account"
+  | "link";
 
 /** Drives the icon and eyebrow color: urgent = maroon, info = neutral, reward = gold. */
 export type WidgetTone = "urgent" | "info" | "reward";
@@ -39,11 +40,18 @@ export interface ShortcutWidgetModel extends WidgetBase {
   data: { label: string; icon: WidgetIcon; to: string };
 }
 
+/** Opens a Goldy chat about the card instead of navigating, e.g. to explain a bill. */
+export interface CardChat {
+  title: string;
+  intro: string;
+}
+
 export interface ActionWidgetModel extends WidgetBase {
   type: "action";
   /** Featured cards span the full width; compact cards sit in a two-column grid. */
   size: "featured" | "compact";
-  data: CardContent;
+  /** `connect: "canvas"` opens the Connect Canvas sheet instead of navigating. */
+  data: CardContent & { chat?: CardChat; connect?: "canvas" };
 }
 
 export interface SuggestionWidgetModel extends WidgetBase {

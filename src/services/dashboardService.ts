@@ -1,4 +1,5 @@
 import { academicsService } from "./academicsService";
+import { canvasService } from "./canvasService";
 import { clubsService } from "./clubsService";
 import { paymentsService } from "./paymentsService";
 import { formatCurrency, formatDate, relativeDue, sum } from "@/utils/helpers";
@@ -79,12 +80,37 @@ export const dashboardService = {
               : `Tuition & fees · ${relativeDue(nextDue).toLowerCase()}`,
           icon: "payment",
           tone: "urgent",
+          chat: {
+            title: "Ask Goldy about your bill",
+            intro:
+              "Upload your billing statement (PDF or photo) or just ask. I can explain each charge, what your aid covered, and how to pay, in any language.",
+          },
+        },
+      });
+    }
+
+    // Setup prompt, not an action item, so it doesn't use up an action slot.
+    if (!canvasService.token()) {
+      widgets.push({
+        id: "w-connect-canvas",
+        type: "action",
+        section: "actions",
+        size: "featured",
+        priority: 0,
+        data: {
+          eyebrow: "Set up · 1 minute",
+          title: "Connect Canvas",
+          detail: "See your real assignments, due dates and grades here",
+          icon: "link",
+          tone: "reward",
+          connect: "canvas",
         },
       });
     }
 
     const actionSlotsLeft =
-      MAX_ACTION_ITEMS - widgets.filter((w) => w.section === "actions").length;
+      MAX_ACTION_ITEMS -
+      widgets.filter((w) => w.section === "actions" && w.id !== "w-connect-canvas").length;
     [...assignments]
       .sort((a, b) => a.dueDate.localeCompare(b.dueDate))
       .slice(0, Math.max(0, actionSlotsLeft))

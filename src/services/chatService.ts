@@ -1,6 +1,7 @@
 import { mockRequest } from "./api";
 import { askAssistant, type AssistantProfile, type AssistantTurn } from "./assistant.functions";
 import { academicsService } from "./academicsService";
+import { canvasService } from "./canvasService";
 import { clubsService } from "./clubsService";
 import { paymentsService } from "./paymentsService";
 import { formatCurrency, formatDate, relativeDue } from "@/utils/helpers";
@@ -43,7 +44,9 @@ async function answer(question: string): Promise<string> {
 export const chatService = {
   /** `history` is the conversation so far, ending with the new question. */
   ask: async (history: AssistantTurn[], profile: AssistantProfile): Promise<string> => {
-    const { reply } = await askAssistant({ data: { turns: history, profile } });
+    const { reply } = await askAssistant({
+      data: { turns: history, profile, canvasToken: canvasService.token() },
+    });
     if (reply) return reply;
     const question = history[history.length - 1]?.text ?? "";
     return mockRequest("/assistant/ask", await answer(question));

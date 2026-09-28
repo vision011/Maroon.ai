@@ -34,9 +34,7 @@ function Section({ section }: { section: ResolvedSection }) {
       {section.id === "quickActions" ? (
         <div className="mt-4 flex justify-around px-3">{section.widgets.map(renderWidget)}</div>
       ) : section.id === "forYou" ? (
-        <div className="mt-3 flex snap-x snap-mandatory gap-3 overflow-x-auto scroll-px-5 px-5 pb-2 [scrollbar-width:none]">
-          {section.widgets.map(renderWidget)}
-        </div>
+        <div className="mt-3 flex flex-col gap-3 px-5">{section.widgets.map(renderWidget)}</div>
       ) : (
         // Odd trailing compact card stretches so the grid never leaves a hole.
         <div className="mt-3 grid grid-cols-2 gap-3 px-5 [&>*:last-child:nth-child(even)]:col-span-2">

@@ -1,12 +1,13 @@
 import { useCallback, useState } from "react";
 import { chatService } from "@/services/chatService";
-import type { AssistantProfile } from "@/services/assistant.functions";
+import type { AssistantProfile, ChatAttachment } from "@/services/assistant.functions";
 import { useAuth } from "./useAuth";
 
 export interface ChatMessage {
   id: string;
   role: "user" | "assistant";
   text: string;
+  attachment?: ChatAttachment;
 }
 
 export function useChat() {
@@ -15,14 +16,24 @@ export function useChat() {
   const { student } = useAuth();
 
   const send = useCallback(
-    async (text: string) => {
-      const question = text.trim();
+    async (text: string, attachment?: ChatAttachment) => {
+      const question = text.trim() || (attachment ? "Explain this document." : "");
       if (!question) return;
-      const userMessage: ChatMessage = { id: `u-${Date.now()}`, role: "user", text: question };
+      const userMessage: ChatMessage = {
+        id: `u-${Date.now()}`,
+        role: "user",
+        text: question,
+        ...(attachment ? { attachment } : {}),
+      };
       setMessages((prev) => [...prev, userMessage]);
       setThinking(true);
       try {
-        const history = [...messages, userMessage].map(({ role, text }) => ({ role, text }));
+        // Attachments stay in the history so follow-up questions can refer back to them.
+        const history = [...messages, userMessage].map(({ role, text, attachment: file }) => ({
+          role,
+          text,
+          ...(file ? { attachment: file } : {}),
+        }));
         const profile: AssistantProfile = {
           firstName: student?.name.split(" ")[0] ?? "there",
           preferredLanguage: student?.preferredLanguage ?? "en",

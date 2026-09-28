@@ -1,5 +1,6 @@
 import { mockRequest } from "./api";
 import { getCanvasAssignments, getCanvasCourses } from "./canvas.functions";
+import { canvasService } from "./canvasService";
 import { DEMO_MODE, demoDate } from "./demo";
 import type { AcademicItem, Course } from "@/types";
 
@@ -89,13 +90,28 @@ const REQUIREMENTS = {
   ],
 };
 
-/** Live Canvas data when CANVAS_API_TOKEN is set on the server (and demo mode is off). */
+/**
+ * Canvas data when the student has connected Canvas with their own token. Without one, the
+ * server's CANVAS_API_TOKEN is used, or the demo data while DEMO_MODE is on. `canvasToken`
+ * defaults to this browser's token; server callers pass the one the client sent.
+ */
+/** The student's token, null to use the server's token, or undefined to skip Canvas. */
+function canvasTokenFor(canvasToken: string | null | undefined): string | null | undefined {
+  const token = canvasToken === undefined ? canvasService.token() : canvasToken;
+  return token || (DEMO_MODE ? undefined : null);
+}
+
 export const academicsService = {
-  getAssignments: async (): Promise<AcademicItem[]> =>
-    (DEMO_MODE ? null : await getCanvasAssignments()) ??
-    mockRequest("/academics/assignments", ASSIGNMENTS),
-  getCourses: async (): Promise<Course[]> =>
-    (DEMO_MODE ? null : await getCanvasCourses()) ?? mockRequest("/academics/courses", COURSES),
+  async getAssignments(canvasToken?: string | null): Promise<AcademicItem[]> {
+    const token = canvasTokenFor(canvasToken);
+    const live = token === undefined ? null : await getCanvasAssignments({ data: token });
+    return live ?? mockRequest("/academics/assignments", ASSIGNMENTS);
+  },
+  async getCourses(canvasToken?: string | null): Promise<Course[]> {
+    const token = canvasTokenFor(canvasToken);
+    const live = token === undefined ? null : await getCanvasCourses({ data: token });
+    return live ?? mockRequest("/academics/courses", COURSES);
+  },
   getRequirements: (): Promise<typeof REQUIREMENTS> =>
     mockRequest("/academics/requirements", REQUIREMENTS),
 };
