@@ -31,7 +31,7 @@ dist-ssr
 *.sln
 *.sw?
 
-# Local secrets (API keys). .env.example stays committed as the template.
-.env
+# Local secrets (API keys) live in .env.local. .env holds only the public VITE_ values and is
+# committed so Lovable builds can inline them; .env.example stays committed as the template.
 .env.*
 !.env.example

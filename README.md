@@ -21,7 +21,7 @@ Built with [Lovable](https://lovable.dev) on TanStack Start.
 
 ```sh
 bun install        # or: npm install
-cp .env.example .env
+cp .env.example .env.local   # server secrets; .env already has the public Supabase values
 bun run dev        # or: npm run dev
 ```
 
@@ -43,6 +43,8 @@ Open the printed local URL. Sign in with any Internet ID. Sign-in is a demo, so 
 | Variable | Purpose |
 | --- | --- |
 | `VITE_API_BASE_URL` | Base URL for the student data API. Defaults to `/api`. The mock services only log it for now. |
+| `VITE_SUPABASE_URL`, `VITE_SUPABASE_PUBLISHABLE_KEY` | Supabase project and publishable key. Browser-safe, committed in `.env` so Lovable builds include them. |
+| `ANTHROPIC_API_KEY`, `CANVAS_BASE_URL`, `CANVAS_API_TOKEN` | Server-only secrets. Put them in `.env.local` locally and in Lovable → Settings → Secrets when hosted. |
 
 ## Features
 
